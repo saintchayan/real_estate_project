@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Sale{% endblock %}
+
+{% block content %}
+<h1>SIBIRMAX</h1>
+<h2>List of houses and flats for rent</h2>
+<h3>
+    <ul>
+        {% for obj in rents %}
+            {% if obj.type == "R" %}
+                    <li>{{ obj }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</h3>
+{% endblock %}
