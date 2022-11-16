@@ -5,6 +5,14 @@
 {% block content %}
 <h1>SIBIRMAX</h1>
 <h2>Real estate studio</h2>
+<h2>
+    <a href="http://127.0.0.1:8000/contacts">CONTACTS</a>
+    <a href="http://127.0.0.1:8000/sale">SALE</a>
+    <a href="http://127.0.0.1:8000/rent">RENT</a>
+    <a href="http://127.0.0.1:8000/about_us">ABOUT US</a>
+    <a href="http://127.0.0.1:8000/medical_insurance">HEALTH INSURANCE</a>
+    <a href="http://127.0.0.1:8000/resident_card">RESIDENT CARD</a>
+</h2>
 <ul>
     {% for obj in object_list %}
         <li> {{obj.type}} {{obj.city}} {{obj.district}} {{obj.address}} {{obj.price_in_lira}} </li>
