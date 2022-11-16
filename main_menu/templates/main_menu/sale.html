@@ -3,9 +3,12 @@
 {% block title %}Sale{% endblock %}
 
 {% block content %}
+
 <h1><a href="http://127.0.0.1:8000/">SIBIRMAX</a></h1>
+
 <h2>List of houses and flats for sale</h2>
-<h3>
+
+<p>
     <ul>
         {% for obj in sales %}
             {% if obj.type == "S" %}
@@ -13,5 +16,8 @@
             {% endif %}
         {% endfor %}
     </ul>
-</h3>
+</p>
+
+{% include 'main_menu/navbar.html' %}
+
 {% endblock %}
