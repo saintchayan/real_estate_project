@@ -10,7 +10,14 @@
 </head>
 
 <body>
+    <h1><a href="{% url 'all_objects' %}">SIBIRMAX</a></h1>
+
+    <h2>
+        {% include 'main_menu/navbar.html' %}
+    </h2>
+
     {% block content %} {% endblock %}
+    {% include 'main_menu/navbar.html' %}
 </body>
 
 </html>
