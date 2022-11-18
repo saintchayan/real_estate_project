@@ -44,10 +44,12 @@ class RentSale(models.Model):
     price_in_lira = models.IntegerField()
     created_data = models.DateField(auto_now_add=True)
     updated_time = models.DateField(auto_now=True)
+    description = models.TextField(max_length=2000, default=None)
+    #images = models.ImageField(height_field=500, width_field=700, max_length=10)
 
     def __str__(self):
         return f"""
         Тип объявления - {self.type}, Город - {self.city}, Район - {self.district}, Адрес - {self.address}, 
         Владелец - {self.owner}, Номер телефона - {self.phone_number}, Цена - {self.price_in_lira},
-        Дата создания - {self.created_data}
+        Дата создания - {self.created_data}, Описание: {self.description}
         """

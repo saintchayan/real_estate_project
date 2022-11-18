@@ -9,4 +9,5 @@ urlpatterns = [
     path('about_us/', about_us, name='about_us'),
     path('medical_insurance/', medical_insurance, name='medical_insurance'),
     path('resident_card/', resident_card, name='resident_card'),
+    path('detail/<int:pk>', ObjectDetail.as_view(), name='detail_view'),
 ]

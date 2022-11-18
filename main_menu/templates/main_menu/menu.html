@@ -9,7 +9,7 @@
 <p>
     <ul>
     {% for obj in object_list %}
-        <li><a href=""></a> {{ obj }} </li>
+        <li> <a href="{% url 'detail_view' obj.id %}"> {{ obj }} </a> </li>
     {% endfor %}
     </ul>
 </p>

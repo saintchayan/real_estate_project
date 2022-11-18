@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template.loader import render_to_string
 from .models import RentSale
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 
 # Create your views here.
@@ -23,6 +23,11 @@ class Rent(ListView):
     context_object_name = 'rents'
 
 
+class ObjectDetail(DetailView):
+    template_name = 'main_menu/detail_view.html'
+    model = RentSale
+
+
 def contacts(request):
     response = render_to_string('main_menu/contacts.html')
     return HttpResponse(response)
@@ -36,14 +41,10 @@ def about_us(request):
 def medical_insurance(request):
     response = render_to_string('main_menu/medical_insurance.html')
     return HttpResponse(response)
-#https://getgoldenvisa.com/turkey-healthcare-system
-
 
 def resident_card(request):
     response = render_to_string('main_menu/resident_card.html')
     return HttpResponse(response)
-#https://turkey-e-visa.com/turkey-residence-permit/
-
 
 # def sale(request):
 #     response = render_to_string('main_menu/sale.html')

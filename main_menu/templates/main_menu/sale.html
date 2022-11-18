@@ -10,7 +10,7 @@
     <ul>
         {% for obj in sales %}
             {% if obj.type == "S" %}
-                    <li>{{ obj }}</li>
+                    <li><a href="{% url 'detail_view' obj.id %}"> {{ obj }} </a></li>
             {% endif %}
         {% endfor %}
     </ul>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Sale{% endblock %}
+
+{% block content %}
+
+<h2>DETAIL VIEW</h2>
+
+<p>
+    <ul>
+        <li> {{ object.type }} </li>
+        <li> {{ object.city }} </li>
+        <li> {{ object.district }} </li>
+        <li> {{ object.address }} </li>
+        <li> {{ object.price_in_lira }} </li>
+        <li> {{ object.created_data }} </li>
+        <li> {{ object.description }} </li>
+    </ul>
+</p>
+
+{% endblock %}
