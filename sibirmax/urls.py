@@ -15,13 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from main_menu.views import RentSalesAPIView
+
 
 admin.site.site_header = 'SIBIRMAX'
 admin.site.index_title = 'Satilik'
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_menu.urls')),
+    path('api/v1/object_list/', RentSalesAPIView.as_view()),
 ]
 
 # sudo fuser -k 8000/tcp - how to kill a process

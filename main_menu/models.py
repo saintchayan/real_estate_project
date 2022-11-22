@@ -44,7 +44,7 @@ class RentSale(models.Model):
     price_in_lira = models.IntegerField()
     created_data = models.DateField(auto_now_add=True)
     updated_time = models.DateField(auto_now=True)
-    description = models.TextField(max_length=2000, default=None)
+    description = models.TextField(blank=True)
     #images = models.ImageField(height_field=500, width_field=700, max_length=10)
 
     def __str__(self):

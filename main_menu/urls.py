@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import *
+from .serializer import RentSaleSerializer
 
 urlpatterns = [
     path('', Menu.as_view(), name='all_objects'),

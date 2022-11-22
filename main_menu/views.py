@@ -1,11 +1,44 @@
-from django.shortcuts import render
+from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.template.loader import render_to_string
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from .models import RentSale
 from django.views.generic import ListView, DetailView
+from rest_framework import generics
+from main_menu.serializer import RentSaleSerializer
 
 
-# Create your views here.
+class RentSalesAPIView(APIView):
+    def get(self, request):
+        list_of_objects = RentSale.objects.all()
+        return Response({'posts': RentSaleSerializer(list_of_objects, many=True).data})
+
+    def post(self, request):
+        serializer = RentSaleSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        new_object = RentSale.objects.create(
+            type = request.data['type'],
+            city = request.data['city'],
+            district = request.data['district'],
+            address = request.data['address'],
+            owner = request.data['owner'],
+            phone_number = request.data['phone_number'],
+            price_in_lira = request.data['price_in_lira'],
+            created_data = request.data['created_data'],
+            updated_time = request.data['updated_time'],
+            description = request.data['description']
+        )
+        return Response({'post': RentSaleSerializer(new_object).data})
+
+
+# class RentSalesAPIView(generics.ListAPIView):
+#     queryset = RentSale.objects.all()
+#     serializer_class = RentSaleSerializer
+
+
 class Menu(ListView):
     template_name = 'main_menu/menu.html'
     model = RentSale
