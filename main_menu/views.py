@@ -10,6 +10,11 @@ from rest_framework import generics
 from main_menu.serializer import RentSaleSerializer
 
 
+class RentSalesAPIList(generics.ListCreateAPIView):
+    queryset = RentSale.objects.all()
+    serializer_class = RentSaleSerializer
+
+
 class RentSalesAPIView(APIView):
     def get(self, request):
         list_of_objects = RentSale.objects.all()
@@ -18,25 +23,30 @@ class RentSalesAPIView(APIView):
     def post(self, request):
         serializer = RentSaleSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response({'post': serializer.data})
 
-        new_object = RentSale.objects.create(
-            type = request.data['type'],
-            city = request.data['city'],
-            district = request.data['district'],
-            address = request.data['address'],
-            owner = request.data['owner'],
-            phone_number = request.data['phone_number'],
-            price_in_lira = request.data['price_in_lira'],
-            created_data = request.data['created_data'],
-            updated_time = request.data['updated_time'],
-            description = request.data['description']
-        )
-        return Response({'post': RentSaleSerializer(new_object).data})
+    def put(self, request, *args, **kwargs):
+        pk = kwargs.get("pk", None)
+        if not pk:
+            return Response({"Error": "Method PUT not allowed"})
 
+        try:
+            instance = RentSale.objects.get(pk=pk)
+        except:
+            return Response({"Error": "Object does not exist"})
 
-# class RentSalesAPIView(generics.ListAPIView):
-#     queryset = RentSale.objects.all()
-#     serializer_class = RentSaleSerializer
+        serializer = RentSaleSerializer(data=request.data, instance=instance)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response({"post": serializer.data})
+
+    # def delete(self, request, *args, **kwargs):
+    #     pk = kwargs.get("pk", None)
+    #     if not pk:
+    #         return Response({"Error": "Method DELETE not allowed"})
+    #
+    #     return Response({"post": "delete post " + str(pk)})
 
 
 class Menu(ListView):
@@ -75,18 +85,7 @@ def medical_insurance(request):
     response = render_to_string('main_menu/medical_insurance.html')
     return HttpResponse(response)
 
+
 def resident_card(request):
     response = render_to_string('main_menu/resident_card.html')
     return HttpResponse(response)
-
-# def sale(request):
-#     response = render_to_string('main_menu/sale.html')
-#     return HttpResponse(response)
-
-# def rent(request):
-#     response = render_to_string('main_menu/rent.html')
-#     return HttpResponse(response)
-
-# def menu(request):
-#     flats = RentSale.objects.all()
-#     return render(request, 'main_menu/menu.html', {'flats': flats})
