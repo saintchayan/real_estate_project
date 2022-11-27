@@ -3,50 +3,37 @@ from django.http import HttpResponse
 from django.template.loader import render_to_string
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.viewsets import GenericViewSet
 
 from .models import RentSale
 from django.views.generic import ListView, DetailView
-from rest_framework import generics
+from rest_framework import generics, viewsets, mixins
 from main_menu.serializer import RentSaleSerializer
 
 
-class RentSalesAPIList(generics.ListCreateAPIView):
+class RentSalesViewSet(mixins.CreateModelMixin,
+                   mixins.RetrieveModelMixin,
+                   mixins.UpdateModelMixin,
+                   mixins.DestroyModelMixin,
+                   mixins.ListModelMixin,
+                   GenericViewSet):
     queryset = RentSale.objects.all()
     serializer_class = RentSaleSerializer
 
 
-class RentSalesAPIView(APIView):
-    def get(self, request):
-        list_of_objects = RentSale.objects.all()
-        return Response({'posts': RentSaleSerializer(list_of_objects, many=True).data})
-
-    def post(self, request):
-        serializer = RentSaleSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response({'post': serializer.data})
-
-    def put(self, request, *args, **kwargs):
-        pk = kwargs.get("pk", None)
-        if not pk:
-            return Response({"Error": "Method PUT not allowed"})
-
-        try:
-            instance = RentSale.objects.get(pk=pk)
-        except:
-            return Response({"Error": "Object does not exist"})
-
-        serializer = RentSaleSerializer(data=request.data, instance=instance)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response({"post": serializer.data})
-
-    # def delete(self, request, *args, **kwargs):
-    #     pk = kwargs.get("pk", None)
-    #     if not pk:
-    #         return Response({"Error": "Method DELETE not allowed"})
-    #
-    #     return Response({"post": "delete post " + str(pk)})
+# class RentSalesAPIList(generics.ListCreateAPIView):
+#     queryset = RentSale.objects.all()
+#     serializer_class = RentSaleSerializer
+#
+#
+# class RentSalesAPIUpdate(generics.UpdateAPIView):
+#     queryset = RentSale.objects.all()
+#     serializer_class = RentSaleSerializer
+#
+#
+# class RentSalesAPIDetailView(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = RentSale.objects.all()
+#     serializer_class = RentSaleSerializer
 
 
 class Menu(ListView):
