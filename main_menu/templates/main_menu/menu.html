@@ -7,11 +7,12 @@
 <h2>REAL ESTATE STUDIO</h2>
 
 <p>
-    <ul>
     {% for obj in object_list %}
-        <li> <a href="{% url 'detail_view' obj.id %}"> {{ obj }} </a> </li>
+        <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a> <br>
+        {% if obj.image %}
+        <img src="{{obj.image.url}}" width="700" height="500"> <br>
+        {% endif %}
     {% endfor %}
-    </ul>
 </p>
 
 {% endblock %}

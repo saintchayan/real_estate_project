@@ -7,13 +7,14 @@
 <h2>List of houses and flats for sale</h2>
 
 <p>
-    <ul>
-        {% for obj in sales %}
-            {% if obj.type == "S" %}
-                    <li><a href="{% url 'detail_view' obj.id %}"> {{ obj }} </a></li>
+    {% for obj in sales %}
+        {% if obj.type == "S" %}
+        <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a></li> <br>
+            {% if obj.image %}
+            <img src="{{obj.image.url}}" width="700" height="500"> <br>
             {% endif %}
-        {% endfor %}
-    </ul>
+        {% endif %}
+    {% endfor %}
 </p>
 
 {% endblock %}

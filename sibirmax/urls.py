@@ -13,10 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
+from django.conf import settings
 from main_menu.views import *
 
 
@@ -36,4 +38,4 @@ urlpatterns = [
     # path('api/v1/object_detail/<int:pk>/', RentSalesAPIDetailView.as_view()),
 ]
 
-# sudo fuser -k 8000/tcp - how to kill a process
+urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

@@ -45,11 +45,11 @@ class RentSale(models.Model):
     created_data = models.DateField(auto_now_add=True)
     updated_time = models.DateField(auto_now=True)
     description = models.TextField(blank=True)
-    #images = models.ImageField(height_field=500, width_field=700, max_length=10)
+    image = models.ImageField(null=True, blank=True, upload_to='images/')
 
     def __str__(self):
         return f"""
         Тип объявления - {self.type}, Город - {self.city}, Район - {self.district}, Адрес - {self.address}, 
         Владелец - {self.owner}, Номер телефона - {self.phone_number}, Цена - {self.price_in_lira},
-        Дата создания - {self.created_data}, Описание: {self.description}
+        Дата создания - {self.created_data}, Описание: {self.description}, {self.image}
         """
