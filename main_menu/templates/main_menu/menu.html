@@ -9,9 +9,9 @@
 <p>
     {% for obj in object_list %}
         <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a> <br>
-        {% if obj.image %}
-        <img src="{{obj.image.url}}" width="700" height="500"> <br>
-        {% endif %}
+        {% for image in obj.pictures.all %}
+            <img src="{{ image.image.url }}">
+        {% endfor %}
     {% endfor %}
 </p>
 
