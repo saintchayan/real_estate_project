@@ -1,10 +1,122 @@
-h1, h2, h3, h4, nav
-    {
-    color: green;
-    text-align: center;
-    }
+h1, h2, h3, h4, nav {
+  text-align: center;
+}
 
-body
-    {
-    background-color: #EFFBED;
-    }
+a {
+    text-color: black;
+    text-decoration: none;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+  height: 500p;
+  width: 700px;
+}
+
+div {
+    display: block;
+}
+
+#topRedStrip {
+  background-color: #cf1519;
+  top: 0;
+  height: 56px;
+  width: 100%;
+}
+
+#mainCon {
+    max-width: 100%;
+}
+
+#mainCon {
+    max-width: 1360px;
+    min-width: 1260px;
+    margin: auto;
+    margin-top: -56px;
+}
+
+#header, #headerMenu, #Pagination {
+    margin: auto;
+}
+
+#mapTopFiltersInnerCon, #listInnerCon,
+#listViewMoreInfo, #listHeaderCon, #header,
+#headerMenu, #Pagination {
+    max-width: 1360px;
+    min-width: 1260px;
+}
+
+#header {
+    background-color: #c7191d;
+    padding: 5px;
+    height: 56px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 5;
+}
+
+#cmsPreviewCont {
+    display: inline-block;
+}
+
+#cmsPreviewInnerCont {
+    display: inline-flex;
+}
+
+#headerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.toggleSwitchCon {
+    background-color: #7C141A;
+    border-radius: 17px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.toggleSwitchInnerCon {
+    position: relative;
+    display: flex;
+}
+
+.btn, .card, .grayButton, .grayRoundBtn, .grayRoundedBtn, .btnWithIcon, .greenRoundedBtn, .greenCircleBtn, .greenButton, .blueRoundedBtn, .toggleSwitchCon, .whiteRoundedBtn, .scrollingHotSpotLeftVisible, .scrollingHotSpotRightVisible {
+    transition: box-shadow 0.2s linear, background 0.2s linear;
+}
+
+.toggleOption.selected {
+    color: black;
+}
+
+.toggleOption {
+    color: white;
+    padding: 7px 3px;
+    font-size: 0.8rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    transition: color 0.2s ease-in;
+    margin: 0 5px 0 5px;
+    z-index: 1;
+}
+
+.toggleSelector {
+    background: white;
+    height: calc(100% - 2px);
+    width: calc(50% - 2px);
+    border-radius: 15px;
+    position: absolute;
+    top: 1px;
+    transition: 0.2s linear left;
+}

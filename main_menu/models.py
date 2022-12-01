@@ -1,9 +1,8 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
-# Create your models here.
 class RentSale(models.Model):
-
     TYPE_CHOICES = [
         ('R', 'Rent'),
         ('S', 'Sale'),
@@ -45,11 +44,23 @@ class RentSale(models.Model):
     created_data = models.DateField(auto_now_add=True)
     updated_time = models.DateField(auto_now=True)
     description = models.TextField(blank=True)
-    image = models.ImageField(null=True, blank=True, upload_to='images/')
 
     def __str__(self):
         return f"""
         Тип объявления - {self.type}, Город - {self.city}, Район - {self.district}, Адрес - {self.address}, 
         Владелец - {self.owner}, Номер телефона - {self.phone_number}, Цена - {self.price_in_lira},
-        Дата создания - {self.created_data}, Описание: {self.description}, {self.image}
+        Дата создания - {self.created_data}, Описание: {self.description}
         """
+
+
+class Picture(models.Model):
+    image = models.ImageField(upload_to='images/')
+    rentsale = models.ForeignKey(RentSale, on_delete=models.CASCADE, null=True, related_name='pictures')
+#
+
+# class Image(models.Model):
+#     image = models.ImageField(upload_to='images/')
+#     rentsale = models.ForeignKey(RentSale, on_delete=models.CASCADE, null=True)
+#
+#     def __str__(self):
+#         return f"{self.image}"

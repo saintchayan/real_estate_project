@@ -10,9 +10,9 @@
     {% for obj in sales %}
         {% if obj.type == "S" %}
         <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a></li> <br>
-            {% if obj.image %}
-            <img src="{{obj.image.url}}" width="700" height="500"> <br>
-            {% endif %}
+        {% for image in obj.pictures.all %}
+            <img src="{{ image.image.url }}">
+        {% endfor %} <br>
         {% endif %}
     {% endfor %}
 </p>

@@ -41,6 +41,7 @@ class Menu(ListView):
     model = RentSale
 
 
+
 class Sale(ListView):
     template_name = 'main_menu/sale.html'
     model = RentSale
