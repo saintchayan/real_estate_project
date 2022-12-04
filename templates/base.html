@@ -15,7 +15,7 @@
         <span id="Header" class="ControlBaseWrapper " style="">
             <header id="header">
                 <div id="headerLeft">
-                    <a href="{% url 'all_objects' %}" style="height: 56px; width: 159px; vertical-align: middle; margin-left: 0px;">SIBIRMAX</a>
+                    <a href="{% url 'all_objects' %}" class="main_menu" style="height: 56px; width: 159px; vertical-align: middle; margin-left: 0px;">SIBIRMAX</a>
                     <div id="cmsPreviewCont" class="noPrint">
                         <div id="cmsPreviewInnerCont"></div>
                     </div>
@@ -25,12 +25,11 @@
                         <span id="langToggle" class="ControlBaseWrapper ">
                             <div id="toggleSwitchCon ">
                                 <div class="toggleSwitchInnerCon">
-                                    <a href="" class="toggleOption selected" data-value="1">ENG|</a>
+                                    <a href="" class="toggleOption " data-value="1">ENG</a>
                                     <a href="" class="toggleOption " data-value="2">TUR</a>
-                                    <div class="toggleSelector" style="width: 50%; left: 50%;"></div>
+                                    <a href="" class="toggleOption " data-value="2">RUS</a>
                                 </div>
                             </div>
-                            <script>var toggle = new Controls.Desktop.Toggle(null, 'langToggle');</script>
                         </span>
                     </div>
                 </div>
@@ -38,12 +37,6 @@
             <script>var Header = new Controls.Desktop.Header(null, 'Header');</script>
         </span>
 
-
-
-
-        <h2>
-            {% include 'main_menu/navbar.html' %}
-        </h2>
 
         {% block content %} {% endblock %}
         {% include 'main_menu/navbar.html' %}

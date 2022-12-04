@@ -1,4 +1,3 @@
-from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -56,11 +55,3 @@ class RentSale(models.Model):
 class Picture(models.Model):
     image = models.ImageField(upload_to='images/')
     rentsale = models.ForeignKey(RentSale, on_delete=models.CASCADE, null=True, related_name='pictures')
-#
-
-# class Image(models.Model):
-#     image = models.ImageField(upload_to='images/')
-#     rentsale = models.ForeignKey(RentSale, on_delete=models.CASCADE, null=True)
-#
-#     def __str__(self):
-#         return f"{self.image}"
