@@ -9,6 +9,18 @@
 </head>
 <body>
 <form action="">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="s3gGFduywtFPmo5xV0r01q6fLQRSzsVLZPVG0mn/410eks
+        0N8fXRrpa2fFDXb+r+07IXBm5Y3eGRTWLsPNlqCqvD781RmVY8znhPFd560oM5fXf3ozRHFwvcJC/GvtJ8Cio8CHnSXl4QI2ZLJyJzubNMkI+OH
+        UFRjllerKQp4+gln4wC8vWs+rsneIL1evgnZxYUAuW7KSKbhp7nVSK4/HPd8tSbD87HjI2WG6YX09+3YfHHIUOEKa60cvItge7KJd/TKPPYYqe
+        ZOzfn5tdJCrEpCZLCLxCq92ViuvXmrHFO8oImCt7PycVxIh9gH2K5K8v022RgaojZ3e6bELzvkaDrpjLrAfuZJ9YDN82Vli3p1Dy3chEw57CmP1
+        zwJ8Fz53ge3wATwIWAK6Xm3a+hwm8BjMLErGuVf1oeFanGqXZxKHa/NJ1I+qDsin/svULvTgV1nLeatZ+SPERNqCL60NbXm5qPwWy7oMiLEWocn
+        pU9Px6ZT5wNNyxuEH/4abKqINfHOzFb7/DBT2d6rIEBXiee7NJE6vRrCZ/iaTJRdvCv9w45gCSKYOY3ZlTQ0JJmzIhmWkdSZNjilsOcMSTMo0rB
+        0xlr5uIXj60xHWFUDDWPDdmY">
+    </div>
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987">
+    </div>
     <div id="topRedStrip"></div>
     <div id="loadingBar" class="loadingBar" style="display: none;"></div>
     <div id="mainCon">
@@ -25,9 +37,9 @@
                         <span id="langToggle" class="ControlBaseWrapper ">
                             <div id="toggleSwitchCon ">
                                 <div class="toggleSwitchInnerCon">
-                                    <a href="" class="toggleOption " data-value="1">ENG</a>
-                                    <a href="" class="toggleOption " data-value="2">TUR</a>
-                                    <a href="" class="toggleOption " data-value="2">RUS</a>
+                                    <a href="/" class="toggleOption " data-value="1">ENG</a>
+                                    <a href="/" class="toggleOption " data-value="2">TUR</a>
+                                    <a href="/" class="toggleOption " data-value="2">RUS</a>
                                 </div>
                             </div>
                         </span>
@@ -36,10 +48,51 @@
             </header>
             <script>var Header = new Controls.Desktop.Header(null, 'Header');</script>
         </span>
+        <span id="ctl35" class="ControlBaseWrapper ">
+            <div id="headerMenu" class="noPrint">
+                <div class="headerMenuItem">
+                    <a href="{% url 'sale_list'%}">SALE</a>
+                </div>
+                <div class="headerMenuItem ">
+                    <a href="{% url 'rent_list'%}">RENT</a>
+                </div>
+                <div class="headerMenuItem ">
+                    <a href="{% url 'resident_card'%}">Resident permit</a>
+                </div>
+                <div class="headerMenuItem ">
+                    <a href="{% url 'medical_insurance'%}">Medical insurance</a>
+                </div>
+            </div>
+        </span>
 
 
         {% block content %} {% endblock %}
-        {% include 'main_menu/navbar.html' %}
+
+        <span id="ctl36" class="ControlBaseWrapper">
+            <footer id="footer">
+                <div id="footerLinkCon" class="noPrint">
+                    <div class="footerCol">
+                        <a href="{% url 'sale_list'%}" class="footerColItem" id="lnkFooter_Sale">Sale</a>
+                        <a href="{% url 'rent_list'%}" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="{% url 'medical_insurance'%}" class="footerColItem" id="lnkFooter_MedIns">Medical insurance</a>
+                        <a href="{% url 'resident_card'%}" class="footerColItem" id="lnkFooter_resident">Resident permit</a>
+                    </div>
+                    <div class="footerCol">
+                        <a href="https://ru.goc.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_goc">Ministry of Interior
+                            Presidency of Migration Management</a>
+                        <a href="{% url 'rent_list'%}" target="_blank" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="{% url 'rent_list'%}" target="_blank" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="{% url 'about_us'%}" class="footerColItem" id="lnkFooter_info">About us</a>
+                    </div>
+                    <div class="footerCol">
+                        <a href="{% url 'contacts'%}" class="footerColItem" id="lnkFooter_contacts">Contacts</a>
+                        <a href="https://www.instagram.com/mergen_siberia/" target="_blank" class="footerColItem" id="lnkFooter_instagram">Instagram</a>
+                        <a href="https://t.me/RedStoneRedSquare" class="footerColItem" target="_blank" id="lnkFooter_tg">Telegram</a>
+                        <a href="https://wa.me/79151657771" class="footerColItem" target="_blank" id="lnkFooter_wa">WhatsApp</a>
+                    </div>
+                </div>
+            </footer>
+        </span>
     </div>
 </form>
 </body>
