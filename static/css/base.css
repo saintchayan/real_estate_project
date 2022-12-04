@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 img {
@@ -22,6 +22,11 @@ img {
 
 div {
     display: block;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
 }
 
 .main_menu {
@@ -36,6 +41,18 @@ div {
   width: 100%;
 }
 
+.loadingBar {
+    height: 7px;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    background-color: #ddd;
+    bottom: -1px;
+    z-index: 2;
+    animation: fadeIn .3s ease;
+    -webkit-animation: fadeIn .3s ease;
+}
+
 #mainCon {
     max-width: 100%;
 }
@@ -44,6 +61,10 @@ div {
     max-width: 1360px;
     min-width: 1260px;
     margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
     margin-top: -56px;
 }
 
@@ -122,4 +143,63 @@ div {
 
 .navbar {
     color: black;
+}
+
+input, textarea, select, button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#headerMenu {
+    display: flex;
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 0;
+    background-color: white;
+    height: 28px;
+}
+
+.headerMenuItem a, .headerMenuItemText a {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    color: #23A1C0;
+    cursor: pointer;
+}
+
+.headerMenuItem {
+    flex: 1;
+    text-align: center;
+    padding: 5px 5px;
+    border-right: 2px solid #E6E6E6;
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#footer {
+    color: white;
+}
+
+footer {
+    display: block;
+}
+
+#footerLinkCon {
+    background-color: #4F485A;
+    display: flex;
+    padding: 25px 75px 30px 75px;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.footerColItem {
+    padding: 5px 0;
+    text-decoration: none !important;
+    display: block !important;
+    color: white !important;
+    font-size: 0.9rem;
 }

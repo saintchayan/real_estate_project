@@ -25,9 +25,9 @@
                         <span id="langToggle" class="ControlBaseWrapper ">
                             <div id="toggleSwitchCon ">
                                 <div class="toggleSwitchInnerCon">
-                                    <a href="" class="toggleOption " data-value="1">ENG</a>
-                                    <a href="" class="toggleOption " data-value="2">TUR</a>
-                                    <a href="" class="toggleOption " data-value="2">RUS</a>
+                                    <a href="/" class="toggleOption " data-value="1">ENG</a>
+                                    <a href="/" class="toggleOption " data-value="2">TUR</a>
+                                    <a href="/" class="toggleOption " data-value="2">RUS</a>
                                 </div>
                             </div>
                         </span>
@@ -36,10 +36,51 @@
             </header>
             <script>var Header = new Controls.Desktop.Header(null, 'Header');</script>
         </span>
+        <span id="ctl35" class="ControlBaseWrapper ">
+            <div id="headerMenu" class="noPrint">
+                <div class="headerMenuItem">
+                    <a href="{% url 'sale_list'%}">SALE</a>
+                </div>
+                <div class="headerMenuItem ">
+                    <a href="{% url 'rent_list'%}">RENT</a>
+                </div>
+                <div class="headerMenuItem ">
+                    <a href="{% url 'resident_card'%}">Resident permit</a>
+                </div>
+                <div class="headerMenuItem ">
+                    <a href="{% url 'medical_insurance'%}">Medical insurance</a>
+                </div>
+            </div>
+        </span>
 
 
         {% block content %} {% endblock %}
-        {% include 'main_menu/navbar.html' %}
+
+        <span id="ctl36" class="ControlBaseWrapper">
+            <footer id="footer">
+                <div id="footerLinkCon" class="noPrint">
+                    <div class="footerCol">
+                        <a href="{% url 'sale_list'%}" class="footerColItem" id="lnkFooter_Sale">Sale</a>
+                        <a href="{% url 'rent_list'%}" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="{% url 'medical_insurance'%}" class="footerColItem" id="lnkFooter_MedIns">Medical insurance</a>
+                        <a href="{% url 'resident_card'%}" class="footerColItem" id="lnkFooter_resident">Resident permit</a>
+                    </div>
+                    <div class="footerCol">
+                        <a href="https://ru.goc.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_goc">
+                            Presidency of Migration Management</a>
+                        <a href="{% url 'rent_list'%}" target="_blank" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="{% url 'rent_list'%}" target="_blank" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="{% url 'about_us'%}" class="footerColItem" id="lnkFooter_info">About us</a>
+                    </div>
+                    <div class="footerCol">
+                        <a href="{% url 'contacts'%}" class="footerColItem" id="lnkFooter_contacts">Contacts</a>
+                        <a href="https://www.instagram.com/mergen_siberia/" target="_blank" class="footerColItem" id="lnkFooter_instagram">Instagram</a>
+                        <a href="https://t.me/RedStoneRedSquare" class="footerColItem" target="_blank" id="lnkFooter_tg">Telegram</a>
+                        <a href="https://wa.me/79151657771" class="footerColItem" target="_blank" id="lnkFooter_wa">WhatsApp</a>
+                    </div>
+                </div>
+            </footer>
+        </span>
     </div>
 </form>
 </body>
