@@ -4,18 +4,91 @@
 
 {% block content %}
 
-<h2>DETAIL VIEW</h2>
+<h1>{{ object.address }}</h1>
 
-<p>
-    <ul>
-        <li> {{ object.type }} </li>
-        <li> {{ object.city }} </li>
-        <li> {{ object.district }} </li>
-        <li> {{ object.address }} </li>
-        <li> {{ object.price_in_lira }} </li>
-        <li> {{ object.created_data }} </li>
-        <li> {{ object.description }} </li>
-    </ul>
-</p>
+<div id="listingBodyCon">
+    <div id="listingBodyLeftCon">
+        <div id="listingDetailsTopCon" class="listingContentBox propertyDetailsSectionCon">
+            <div id="listingDetailsTopInnerCon" class="table">
+                <div class="leftTableCell">
+                    <div>
+                        <div style="display: inline-block;">
+                            <div id="listingPriceValue">
+                                ₺{{ object.price_in_lira }}
+                                {% if object.type == 'R' %}
+                                    per month
+                                {% endif %}
+                            </div>
+                            <div id="listingNextOpenHouseCon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="listingTopDetailsLeft">
+                    <div id="listingAddress" class="unsetH1">
+                        Province: {{ object.city }} <br>
+                        Address: {{ object.address }}
+                    </div>
+                    <div id="listingMLSNum">
+                        District: {{ object.district }}
+                    </div>
+                </div>
+                <div class="listingTopDetailsRight">
+                    <div class="listingIconsCon">
+                        <div id="BedroomIcon" class="listingIconCon">
+                            <div class="listingIconNum">{{ object.room }} + 1</div>
+                            <div class="listingIcon">
+                                <div class="propertyCardBedIcon">
+                                    <img src="/media/images/bed_icon.png" alt="bed_icon">
+                                </div>
+                            </div>
+                            <div class="listingIconText">Bedrooms</div>
+                        </div>
+                        <div id="FloorIcon" class="listingIconCon">
+                            <div class="listingIconNum">{{ object.floor }}</div>
+                            <div class="listingIcon">
+                                <div class="propertyCardBedIcon">
+                                    <img src="/media/images/floor_icon.png" alt="floor_icon">
+                                </div>
+                            </div>
+                            <div class="listingIconText">Floor</div>
+                        </div>
+                        <div id="SquareIcon" class="listingIconCon">
+                            <div class="listingIconNum">{{ object.square }}</div>
+                            <div class="listingIcon">
+                                <div class="propertyCardBedIcon">
+                                    <img src="/media/images/square_icon.png" alt="square_icon">
+                                </div>
+                            </div>
+                            <div class="listingIconText">Square</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="listingDetailsTabsCon" class="propertyDetailsSectionCon">
+            <div id="listingDetailsTabsBody">
+                <div id="listingInfoTab" class="listingTabContent overwriteShowPrint">
+                    <div class="propertyDetailsSectionCon" id="PropertyDescription" >
+                        <div class="propertyDetailsSectionHeader">Description</div>
+                        <div id="propertyDescriptionCon">
+                             {{ object.description }}
+                        </div>
+                    </div>
+                    <div class="propertyDetailsSectionCon" id="PropertyData">
+                        <div class="propertyDetailsSectionHeader">Data</div>
+                        <div class="propertyDetailsSectionContent">
+                            <div class="propertyDetailsSectionContentSubCon" id="propertyDetailsSectionContentSubCon_PropertyType">
+                                <div class="propertyDetailsSectionContentValue">{{ object.created_data }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

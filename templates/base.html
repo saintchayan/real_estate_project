@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title> {% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" href="/media/images/icon2.png" type="image/png">
+    <link rel="shortcut icon" href="/media/images/icon2.png" type="image/png">
     {% block css_additional %} {% endblock %}
 </head>
 <body>
@@ -15,7 +17,9 @@
         <span id="Header" class="ControlBaseWrapper " style="">
             <header id="header">
                 <div id="headerLeft">
-                    <a href="{% url 'all_objects' %}" class="main_menu" style="height: 56px; width: 159px; vertical-align: middle; margin-left: 0px;">SIBIRMAX</a>
+                    <a href="{% url 'all_objects' %}">
+                        <img src="/media/images/icon.png" style="height: 25px; width: 159px; vertical-align: middle; margin-left: -10px;" alt="sibirmax_logo">
+                    </a>
                     <div id="cmsPreviewCont" class="noPrint">
                         <div id="cmsPreviewInnerCont"></div>
                     </div>
@@ -25,9 +29,15 @@
                         <span id="langToggle" class="ControlBaseWrapper ">
                             <div id="toggleSwitchCon ">
                                 <div class="toggleSwitchInnerCon">
-                                    <a href="/" class="toggleOption " data-value="1">ENG</a>
-                                    <a href="/" class="toggleOption " data-value="2">TUR</a>
-                                    <a href="/" class="toggleOption " data-value="2">RUS</a>
+                                    <a href="/" class="toggleOption " data-value="1">
+                                        <img src="/media/images/uk-icon.png" alt="uk-icon">
+                                    </a>
+                                    <a href="/" class="toggleOption " data-value="2">
+                                        <img src="/media/images/tur-icon.png" alt="tur-icon">
+                                    </a>
+                                    <a href="/" class="toggleOption " data-value="2">
+                                        <img src="/media/images/rus-icon.png" alt="rus-icon">
+                                    </a>
                                 </div>
                             </div>
                         </span>
@@ -53,8 +63,19 @@
             </div>
         </span>
 
-
-        {% block content %} {% endblock %}
+        <div id="BodyContenCon">
+            <span id="MainContent_ctl00_ctl00" class="ControlBaseWrapper " style>
+                <div id="pageContentCon">
+                    <div id="mainContent">
+                        <div class="sectionText whiteContentBox">
+                            <div class="m_static">
+                                {% block content %} {% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
 
         <span id="ctl36" class="ControlBaseWrapper">
             <footer id="footer">
@@ -67,16 +88,29 @@
                     </div>
                     <div class="footerCol">
                         <a href="https://ru.goc.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_goc">
-                            Presidency of Migration Management</a>
+                            Migration Management</a>
                         <a href="{% url 'rent_list'%}" target="_blank" class="footerColItem" id="lnkFooter_Rent">Rent</a>
-                        <a href="{% url 'rent_list'%}" target="_blank" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="{% url 'contacts'%}" class="footerColItem" id="lnkFooter_contacts">Contacts</a>
                         <a href="{% url 'about_us'%}" class="footerColItem" id="lnkFooter_info">About us</a>
                     </div>
-                    <div class="footerCol">
-                        <a href="{% url 'contacts'%}" class="footerColItem" id="lnkFooter_contacts">Contacts</a>
-                        <a href="https://www.instagram.com/mergen_siberia/" target="_blank" class="footerColItem" id="lnkFooter_instagram">Instagram</a>
-                        <a href="https://t.me/RedStoneRedSquare" class="footerColItem" target="_blank" id="lnkFooter_tg">Telegram</a>
-                        <a href="https://wa.me/79151657771" class="footerColItem" target="_blank" id="lnkFooter_wa">WhatsApp</a>
+                </div>
+                <div id="footerSocialAppCon" class="noPrint">
+                    <div class="footerSocialAppConLeft">
+                        <div class="footerLabel"></div>
+                    </div>
+                    <div class="footerSocialAppConRight">
+                        <div class="footerLabel">STAY CONNECTED</div>
+                        <div class="footerContent">
+                            <a href="https://www.instagram.com/mergen_siberia/" rel="noopener noreferrer" target="_blank">
+                                <img src="/media/images/inst-icon.png" style="height: 25px; width: 25px;" alt="inst-icon">
+                            </a>
+                            <a href="https://t.me/RedStoneRedSquare" rel="noopener noreferrer" target="_blank">
+                                <img src="/media/images/tg-icon.png" style="height: 25px; width: 25px;" alt="tg-icon">
+                            </a>
+                            <a href="https://wa.me/79151657771" rel="noopener noreferrer" target="_blank">
+                                <img src="/media/images/wa-icon.png" style="height: 25px; width: 25px;" alt="wa-icon">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </footer>

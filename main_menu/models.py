@@ -37,6 +37,9 @@ class RentSale(models.Model):
     city = models.CharField(max_length=5, choices=PROVINCE_CHOICES, default='ANTAL')
     district = models.CharField(max_length=4, choices=DISCTRICT_CHOICES, default='KEPE')
     address = models.CharField(max_length=40)
+    room = models.IntegerField()
+    floor = models.IntegerField()
+    square = models.FloatField()
     owner = models.CharField(max_length=100)
     phone_number = models.IntegerField()
     price_in_lira = models.IntegerField()
@@ -45,11 +48,11 @@ class RentSale(models.Model):
     description = models.TextField(blank=True)
 
     def __str__(self):
-        return f"""
-        Тип объявления - {self.type}, Город - {self.city}, Район - {self.district}, Адрес - {self.address}, 
-        Владелец - {self.owner}, Номер телефона - {self.phone_number}, Цена - {self.price_in_lira},
-        Дата создания - {self.created_data}, Описание: {self.description}
-        """
+        return (f'Тип объявления: {self.type}, '
+                f'Адрес: {self.address}, '
+                f'Владелец: {self.owner}, Номер телефона: {self.phone_number}, '
+                f'Цена: {self.price_in_lira}, '
+                f'Дата создания: {self.created_data}, Дата обновления: {self.updated_time}')
 
 
 class Picture(models.Model):

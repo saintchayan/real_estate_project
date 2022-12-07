@@ -9,6 +9,8 @@ img {
 a {
     text-color: black;
     text-decoration: none;
+    color: #23A1C0;
+    cursor: pointer;
 }
 
 body {
@@ -141,6 +143,11 @@ form {
     z-index: 1;
 }
 
+.toggleOption img {
+    width: 25px;
+    height: 25px;
+}
+
 .navbar {
     color: black;
 }
@@ -180,6 +187,18 @@ a {
     cursor: pointer;
 }
 
+.whiteContentBox {
+    margin-bottom: 20px;
+}
+
+.whiteContentBox, .whiteScreenContentBox {
+    border: 1px solid #cdcdcd;
+    padding: 15px;
+    background-color: #fff;
+    position: relative;
+    word-wrap: break-word;
+}
+
 #footer {
     color: white;
 }
@@ -201,5 +220,215 @@ footer {
     text-decoration: none !important;
     display: block !important;
     color: white !important;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
+
+.footerColItem img {
+    width: 13px;
+    height: 13px;
+}
+
+#footer {
+    color: white;
+}
+
+#footerSocialAppCon {
+    background: #3B3842;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 75px;
+}
+
+#footerSocialAppCon .footerLabel {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+#footerSocialAppCon .footerContent {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#footerSocialAppCon a {
+    color: white;
+    text-decoration: none;
+}
+
+#footerSocialAppCon img {
+    margin-right: 15px;
+}
+
+#BodyContenCon {
+    margin: 0 20px 30px 20px;
+    position: relative;
+}
+
+#homeContentCon {
+  margin-bottom: -30px;
+}
+
+#listingBodyCon {
+  display: table;
+  width: 100%;
+}
+
+#listingBodyLeftCon {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 15px;
+}
+.propertyDetailsSectionCon {
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  position: relative;
+}
+
+#listingDetailsTopInnerCon {
+  min-height: 56px;
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.leftTableCell {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+
+#listingPriceValue {
+  font-size: 2.5rem;
+}
+
+#listingNextOpenHouseCon {
+  vertical-align: top;
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.listingTopDetailsLeft {
+  display: table-cell;
+}
+
+#listingAddress {
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.unsetH1 {
+  font-weight: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+}
+
+#listingMLSNum {
+  margin-top: 5px;
+}
+
+.listingTopDetailsRight {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.listingTopDetailsRight {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.propertyDetailsSectionCon {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  position: relative;
+}
+
+.listingIconCon {
+  text-align: center;
+  display: inline-block;
+  margin-left: 15px;
+  color: #666666;
+}
+
+.listingIcon, .listingIconNum {
+  display: inline-block;
+}
+
+.listingIconNum {
+  font-size: 1.3rem;
+}
+
+.listingIconNum, .listingIcon {
+  vertical-align: middle;
+}
+
+.listingIcon img {
+  height: 35px;
+  width: 35px;
+}
+
+.listingIconText {
+  font-size: 0.8rem;
+  margin-top: 1px;
+}
+
+.listingTabContent .propertyDetailsSectionCon {
+  border: 0;
+}
+
+.propertyDetailsSectionCon {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  position: relative;
+}
+
+.listingTabContent .propertyDetailsSectionHeader {
+    margin: 0 0 5px 0;
+}
+
+.propertyDetailsSectionHeader {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#PropertyData {
+    margin-bottom: 0px;
+}
+
+.propertyDetailsSectionContent {
+    margin-left: 1px;
+}
+
+.propertyDetailsValueSubSection, .propertyDetailsSectionContent {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.propertyDetailsSectionContentSubCon {
+    padding-right: 2%;
+    padding-bottom: 15px;
+    flex-grow: 0;
+    flex-basis: 23%;
+}
+
+.propertyDetailsSectionContentValue {
+    word-break: break-word;
+}
+
