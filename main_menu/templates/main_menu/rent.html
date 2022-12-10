@@ -2,17 +2,19 @@
 
 {% block title %}Rent{% endblock %}
 
-{% block content %}
+{% block head_of_content %}
+<h1>List of houses and flats for rent</h1>
+{% endblock %}
 
-<h2>List of houses and flats for rent</h2>
+{% block content %}
 
 <p>
     {% for obj in rents %}
         {% if obj.type == "R" %}
-        <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }}</a> <br>
-        {% for image in obj.pictures.all %}
-            <img src="{{ image.image.url }}">
-        {% endfor %} <br>
+            <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }}</a><br>
+                {% for image in obj.pictures.all %}
+                    <img src="{{ image.image.url }}">
+                {% endfor %} <br>
         {% endif %}
     {% endfor %}
 </p>

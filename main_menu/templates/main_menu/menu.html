@@ -2,17 +2,28 @@
 
 {% block title %}Menu{% endblock %}
 
+{% block head_of_content %}
+<h1>Main menu <br> REAL ESTATE STUDIO</h1>
+{% endblock %}
+
 {% block content %}
 
-<h2>REAL ESTATE STUDIO</h2>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque dicta in maxime quisquam sapiente ullam.
+    Consectetur debitis doloremque eaque? Consectetur deserunt facilis inventore obcaecati quod, saepe sequi sint vel!
+</p>
 
 <p>
-    {% for obj in object_list %}
-        <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a> <br>
-        {% for image in obj.pictures.all %}
-            <img src="{{ image.image.url }}">
-        {% endfor %} <br>
-    {% endfor %}
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque eius libero magni maxime, molestias
+    odit omnis pariatur, perspiciatis placeat qui quod ratione repudiandae sapiente soluta temporibus veniam voluptatibus?
 </p>
+<!--<p>-->
+<!--    {% for obj in object_list %}-->
+<!--        <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a> <br>-->
+<!--        {% for image in obj.pictures.all %}-->
+<!--            <img src="{{ image.image.url }}">-->
+<!--        {% endfor %} <br>-->
+<!--    {% endfor %}-->
+<!--</p>-->
 
 {% endblock %}

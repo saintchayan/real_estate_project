@@ -55,10 +55,10 @@
                     <a href="{% url 'rent_list'%}">RENT</a>
                 </div>
                 <div class="headerMenuItem ">
-                    <a href="{% url 'resident_card'%}">Resident permit</a>
+                    <a href="{% url 'resident_card'%}">RESIDENT PERMIT</a>
                 </div>
                 <div class="headerMenuItem ">
-                    <a href="{% url 'medical_insurance'%}">Medical insurance</a>
+                    <a href="{% url 'medical_insurance'%}">MEDICAL INSURANCE</a>
                 </div>
             </div>
         </span>
@@ -67,6 +67,13 @@
             <span id="MainContent_ctl00_ctl00" class="ControlBaseWrapper " style>
                 <div id="pageContentCon">
                     <div id="mainContent">
+                        <div id="pageHeaderCon">
+                            <div id="pageHeaderCon_left"></div>
+                            <div class="pageTitle" id="pageHeaderCon_center">
+                                {% block head_of_content %} {% endblock %}
+                            </div>
+                            <div id="pageHeaderCon_right"></div>
+                        </div>
                         <div class="sectionText whiteContentBox">
                             <div class="m_static">
                                 {% block content %} {% endblock %}
@@ -87,9 +94,17 @@
                         <a href="{% url 'resident_card'%}" class="footerColItem" id="lnkFooter_resident">Resident permit</a>
                     </div>
                     <div class="footerCol">
-                        <a href="https://ru.goc.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_goc">
-                            Migration Management</a>
-                        <a href="{% url 'rent_list'%}" target="_blank" class="footerColItem" id="lnkFooter_Rent">Rent</a>
+                        <a href="https://en.goc.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_goc">
+                            Presidency of Migration Management</a>
+                        <a href="https://www.antalya.bel.tr/" target="_blank" class="footerColItem"
+                           id="lnkFooter_Metropolitan">Antalya Metropolitan Municipality</a>
+                        <a href="http://www.antalya.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_gov">
+                            T.C. Antalya Prefecture</a>
+                        <a href="{% url 'frequently_asked_questions'%}" class="footerColItem" id="lnkFooter_faq">Frequently Asked Questions</a>
+                    </div>
+                    <div class="footerCol">
+                        <a href="{% url 'privacy_policy'%}" class="footerColItem" id="lnkFooter_privacy">Privacy Policy</a>
+                        <a href="{% url 'terms_of_use'%}" class="footerColItem" id="lnkFooter_Terms">Terms of Use</a>
                         <a href="{% url 'contacts'%}" class="footerColItem" id="lnkFooter_contacts">Contacts</a>
                         <a href="{% url 'about_us'%}" class="footerColItem" id="lnkFooter_info">About us</a>
                     </div>
@@ -110,6 +125,7 @@
                             <a href="https://wa.me/79151657771" rel="noopener noreferrer" target="_blank">
                                 <img src="/media/images/wa-icon.png" style="height: 25px; width: 25px;" alt="wa-icon">
                             </a>
+
                         </div>
                     </div>
                 </div>

@@ -2,17 +2,19 @@
 
 {% block title %}Sale{% endblock %}
 
-{% block content %}
+{% block head_of_content %}
+<h1>List of houses and flats for sale</h1>
+{% endblock %}
 
-<h2>List of houses and flats for sale</h2>
+{% block content %}
 
 <p>
     {% for obj in sales %}
         {% if obj.type == "S" %}
-        <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a></li> <br>
-        {% for image in obj.pictures.all %}
-            <img src="{{ image.image.url }}">
-        {% endfor %} <br>
+            <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a></li> <br>
+                {% for image in obj.pictures.all %}
+                    <img src="{{ image.image.url }}">
+                {% endfor %} <br>
         {% endif %}
     {% endfor %}
 </p>

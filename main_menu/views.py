@@ -77,3 +77,18 @@ def medical_insurance(request):
 def resident_card(request):
     response = render_to_string('main_menu/resident_card.html')
     return HttpResponse(response)
+
+
+def terms_of_use(request):
+    response = render_to_string('main_menu/terms_of_use.html')
+    return HttpResponse(response)
+
+
+def privacy_policy(request):
+    response = render_to_string('main_menu/privacy_policy.html')
+    return HttpResponse(response)
+
+
+def frequently_asked_questions(request):
+    response = render_to_string('main_menu/frequently_asked_questions.html')
+    return HttpResponse(response)
