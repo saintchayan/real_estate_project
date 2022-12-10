@@ -1,13 +1,10 @@
-from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.template.loader import render_to_string
-from rest_framework.response import Response
-from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet
 
 from .models import RentSale
 from django.views.generic import ListView, DetailView
-from rest_framework import generics, viewsets, mixins
+from rest_framework import mixins
 from main_menu.serializer import RentSaleSerializer
 
 
@@ -21,25 +18,9 @@ class RentSalesViewSet(mixins.CreateModelMixin,
     serializer_class = RentSaleSerializer
 
 
-# class RentSalesAPIList(generics.ListCreateAPIView):
-#     queryset = RentSale.objects.all()
-#     serializer_class = RentSaleSerializer
-#
-#
-# class RentSalesAPIUpdate(generics.UpdateAPIView):
-#     queryset = RentSale.objects.all()
-#     serializer_class = RentSaleSerializer
-#
-#
-# class RentSalesAPIDetailView(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = RentSale.objects.all()
-#     serializer_class = RentSaleSerializer
-
-
 class Menu(ListView):
     template_name = 'main_menu/menu.html'
     model = RentSale
-
 
 
 class Sale(ListView):

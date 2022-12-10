@@ -11,10 +11,8 @@
 <p>
     {% for obj in rents %}
         {% if obj.type == "R" %}
-            <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }}</a><br>
-                {% for image in obj.pictures.all %}
-                    <img src="{{ image.image.url }}">
-                {% endfor %} <br>
+            <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a> <br>
+            <img src="{{ obj.pictures.all.0.image.url }}"> <br>
         {% endif %}
     {% endfor %}
 </p>

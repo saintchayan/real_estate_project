@@ -58,6 +58,3 @@ class RentSale(models.Model):
 class Picture(models.Model):
     image = models.ImageField(upload_to='images/')
     rentsale = models.ForeignKey(RentSale, on_delete=models.CASCADE, null=True, related_name='pictures')
-
-    def __str__(self):
-        return f"Фотография для объекта по адресу: {self.rentsale.address}"
