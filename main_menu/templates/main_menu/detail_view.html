@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Sale{% endblock %}
+{% block title %} {{ object.address }} {% endblock %}
 
 {% block head_of_content %}
 <h1>{{ object.address }}</h1>
@@ -92,5 +92,9 @@
         </div>
     </div>
 </div>
+
+{% for image in object.pictures.all %}
+    <img src="{{ image.image.url }}">
+{% endfor %} <br>
 
 {% endblock %}

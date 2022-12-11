@@ -8,15 +8,69 @@
 
 {% block content %}
 
+<div class="fullWidth" style="position: relative;">
+    <div id="listCon" style="visibility: visible; display: block; margin-top: 0;">
+        <div id="listInnerCon" class="largeListingCardCon">
+            <span id="SEOCardList" class="ControlBaseWrapper ">
+                <style>
+                    .listingCardList {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                    }
+                    ul.listingCardList{
+                        list-style: none;
+                    }
+                </style>
+                <ul class="listingCardList">
+                    {% for obj in sales %}
+                        {% if obj.type == "S" %}
+                            <li class="cardCon">
+                                <div class="listingCard card">
+                                    <div class="listingCard card">
+                                        <a href="{% url 'detail_view' obj.id %}" class="blockLink listingDetailsLink"
+                                        target="_blank">
+                                            <div class="listingCardOuterBody">
+                                                <div class="listingCardImageCon">
+                                                    <img src="{{ obj.pictures.all.0.image.url }}"
+                                                         class="listingCardImage">
+                                                </div>
+                                                <div class="listingCardBody">
+                                                    <div class="listingCardPrice">
+                                                        ₺{{obj.price_in_lira}}
+                                                    </div>
+                                                    <div class="listingCardAddress">
+                                                        {{ obj.address }}
+                                                    </div>
+                                                    <div class="listingCardOfficeName">SIBIRMAX, ANTALYA</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
 
-<p>
-    {% for obj in sales %}
-        {% if obj.type == "S" %}
-            <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} </a> <br>
-            <img src="{{ obj.pictures.all.0.image.url }}"> <br>
-        {% endif %}
-    {% endfor %}
-</p>
+<!--<p>-->
+<!--    {% for obj in sales %}-->
+<!--        {% if obj.type == "S" %}-->
+<!--            <a href="{% url 'detail_view' obj.id %}"> {{ obj.address }} <br>-->
+<!--                <img src="{{ obj.pictures.all.0.image.url }}">-->
+<!--            </a> <br>-->
+<!--        {% endif %}-->
+<!--    {% endfor %}-->
+<!--</p>-->
 
 <!--<p>-->
 <!--    {% for obj in sales %}-->
