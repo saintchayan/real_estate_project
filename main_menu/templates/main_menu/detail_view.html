@@ -3,10 +3,16 @@
 {% block title %} {{ object.address }} {% endblock %}
 
 {% block head_of_content %}
-<h1>{{ object.address }}</h1>
+<h1>{{object.address}}</h1>
 {% endblock %}
 
 {% block content %}
+
+<script>
+    window.initializeCarousel=()=>{
+        $("carouselExampleFade").carousel({interval:500})
+        }
+</script>
 
 <div id="listingBodyCon">
     <div id="listingBodyLeftCon">
@@ -29,11 +35,11 @@
             <div class="table">
                 <div class="listingTopDetailsLeft">
                     <div id="listingAddress" class="unsetH1">
-                        Province: {{ object.city }} <br>
+                        Province: {{ object.get_city_display }} <br>
                         Address: {{ object.address }}
                     </div>
                     <div id="listingMLSNum">
-                        District: {{ object.district }}
+                        District: {{object.get_district_display}}
                     </div>
                 </div>
                 <div class="listingTopDetailsRight">
@@ -93,8 +99,29 @@
     </div>
 </div>
 
-{% for image in object.pictures.all %}
-    <img src="{{ image.image.url }}">
-{% endfor %} <br>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+        {% for image in object.pictures.all %}
+            {% if forloop.first %}
+                <div class="carousel-item active">
+            {% else %}
+                <div class="carousel-item">
+            {% endif %}
+            <img src="{{ image.image.url }}" alt="">
+            </div>
+        {% endfor %}
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 {% endblock %}

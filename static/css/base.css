@@ -2,7 +2,14 @@ h1, h2, h3, h4, nav {
   text-align: center;
 }
 
-
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.2em;
+}
 
 a {
     text-color: black;
@@ -157,7 +164,7 @@ input, textarea, select, button {
     border-bottom: 1px solid #E6E6E6;
     padding: 10px 0;
     background-color: white;
-    height: 28px;
+    height: 46px;
 }
 
 .headerMenuItem a, .headerMenuItemText a {
@@ -196,18 +203,9 @@ a {
     text-align: right;
 }
 
-h1 {
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 1.7rem;
-}
-
 .pageTitle {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.2em;
     font-weight: normal;
 }
 
@@ -286,7 +284,7 @@ footer {
 }
 
 #BodyContenCon {
-    margin: 0 20px 30px 20px;
+    margin: 0 20px 20px 20px;
     position: relative;
 }
 
@@ -302,8 +300,8 @@ footer {
 #listingBodyLeftCon {
   display: table-cell;
   vertical-align: top;
-  padding-right: 15px;
 }
+
 .propertyDetailsSectionCon {
   border: 1px solid #cdcdcd;
   margin-bottom: 15px;
@@ -609,3 +607,140 @@ li {
     text-align: center;
     margin: 0 5px;
 }
+
+.carousel-inner img {
+    width: 100%;
+    height: 900px;
+}
+
+#homeHeaderInnerCon {
+    padding: 45px 0 5px 0;
+    height: 415px;
+}
+
+#homeHeaderTitle {
+    text-align: center;
+    font-size: 3.1em;
+    margin: 0px;
+    margin-top: 130px;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.customHeaderImageText {
+    text-shadow: rgb(0 0 0 / 90%) 1px 1px 10px;
+}
+
+#homeHeaderCon {
+    background-size: cover !important;
+    color: white;
+    box-sizing: border-box;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    transition: 0.25s ease-in-out background-image;
+}
+
+.fullWidth {
+    margin: -16px -16px 15px;
+}
+
+#homeHeaderFooterCon {
+    color: white;
+    background-color: #156073;
+    padding: 10px 35px;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whiteRoundedBtn a {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.whiteRoundedBtn {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.whiteRoundedBtn {
+    transition: box-shadow 0.2s linear, background 0.2s linear;
+}
+
+.btn {
+    user-select: none;
+    outline: 0;
+}
+
+.whiteRoundedBtn {
+    vertical-align: middle;
+    border-radius: 60px;
+    position: relative;
+}
+
+
+#carouselExampleControls {
+    background-color: #15677B;
+    padding: 50px 50px 50px 50px;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel slide {
+    background-color: #15677B;
+    padding: 0px;
+    color: white;
+}
+
+#NAC_WhyUseRealtor {
+    min-height: 208px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.NAC_WhyUseRealtorPageTitleH1 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.carousel-inner {
+    min-height: 208px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.NAC_WhyUseRealtorPageTitleH3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.12rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carousel-item-text {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+

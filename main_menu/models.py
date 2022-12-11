@@ -11,7 +11,7 @@ class RentSale(models.Model):
         ('ANTAL', 'Antalya')
     ]
 
-    DISCTRICT_CHOICES = [
+    DISTRICT_CHOICES = [
         ('ASKE', 'Akseki'),
         ('AKSU', 'Aksu'),
         ('ALAN', 'Alanya'),
@@ -35,7 +35,7 @@ class RentSale(models.Model):
 
     type = models.CharField(max_length=1, choices=TYPE_CHOICES, default='R')
     city = models.CharField(max_length=5, choices=PROVINCE_CHOICES, default='ANTAL')
-    district = models.CharField(max_length=4, choices=DISCTRICT_CHOICES, default='KEPE')
+    district = models.CharField(max_length=4, choices=DISTRICT_CHOICES, default='KEPE')
     address = models.CharField(max_length=40)
     room = models.IntegerField()
     floor = models.IntegerField()

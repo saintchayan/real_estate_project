@@ -3,19 +3,67 @@
 {% block title %}Menu{% endblock %}
 
 {% block head_of_content %}
-<h1>Main menu <br> REAL ESTATE STUDIO</h1>
 {% endblock %}
 
 {% block content %}
 
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque dicta in maxime quisquam sapiente ullam.
-    Consectetur debitis doloremque eaque? Consectetur deserunt facilis inventore obcaecati quod, saepe sequi sint vel!
-</p>
+<div id="homeHeaderCon" class="fullWidth"
+     style="background-image: url('/media/images/background.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;">
+    <div id="homeHeaderInnerCon">
+        <div id="homeHeaderTitle" class="customHeaderImageText">Find homes and apartments from trusted SibirMAX</div>
+    </div>
+</div>
+<div id="homeHeaderFooterCon" class="fullWidth">
+    <div><strong>Need help finding a realtor?</strong></div>
+    <a class="whiteRoundedBtn btn" href="" >Get Started</a>
+</div>
 
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt eaque eius libero magni maxime, molestias
-    odit omnis pariatur, perspiciatis placeat qui quod ratione repudiandae sapiente soluta temporibus veniam voluptatibus?
-</p>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <h1 style="font-size:40px" class="NAC_WhyUseRealtorPageTitleH1">
+            Why use SibirMAX Real Estate Studio?
+        </h1>
+        <div class="carousel-item active" style="width: 1320px; margin-right: 50px;">
+            <div>
+                <h3 class="NAC_WhyUseRealtorPageTitleH3">Expertise</h3>
+                <div class="carousel-item-text">
+                    By working with a SibirMAX, you’ll be able to navigate complicated situations like a pro. SibirMAX
+                    have the expertise required to help strategize, negotiate and achieve the best outcomes possible.
+                    Plus, they’ll provide expert guidance throughout the entire home buying and selling journey.
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div>
+                <h3 class="NAC_WhyUseRealtorPageTitleH3">Knowledge</h3>
+                <p class="carousel-item-text">
+                    With valuable real estate market knowledge, SibirNAX work to ensure you’re getting objective and
+                    accurate information when it comes to buying or selling your home.
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div>
+                <h3 class="NAC_WhyUseRealtorPageTitleH3">Dedication</h3>
+                <p class="carousel-item-text">
+                    A SibirNAX® will be on your team and is committed to protecting your interests. As you navigate
+                    this complex process, they’ll be with you every step of the way.
+                </p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 {% endblock %}
