@@ -18,42 +18,23 @@
 </div>
 <div id="homeHeaderFooterCon" class="fullWidth">
     <div><strong>Need help finding a realtor?</strong></div>
-    <a class="whiteRoundedBtn btn" href="" >Get Started</a>
+    <a class="whiteRoundedBtn btn" href="{% url 'client_request' %}">Get Started</a>
 </div>
 
-
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="fullWidth">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <h1 style="font-size:40px" class="NAC_WhyUseRealtorPageTitleH1">
+        <h1 style="font-size:30px" class="NAC_WhyUseRealtorPageTitleH1">
             Why use SibirMAX Real Estate Studio?
         </h1>
-        <div class="carousel-item active" style="width: 1320px; margin-right: 50px;">
-            <div>
-                <h3 class="NAC_WhyUseRealtorPageTitleH3">Expertise</h3>
-                <div class="carousel-item-text">
-                    By working with a SibirMAX, you’ll be able to navigate complicated situations like a pro. SibirMAX
-                    have the expertise required to help strategize, negotiate and achieve the best outcomes possible.
-                    Plus, they’ll provide expert guidance throughout the entire home buying and selling journey.
-                </div>
-            </div>
+        <div class="carousel-item active">
+            <img src="/media/images/slide_photo_1.png" alt="First slide" class="d-block w-100" height="50%">
         </div>
         <div class="carousel-item">
-            <div>
-                <h3 class="NAC_WhyUseRealtorPageTitleH3">Knowledge</h3>
-                <p class="carousel-item-text">
-                    With valuable real estate market knowledge, SibirNAX work to ensure you’re getting objective and
-                    accurate information when it comes to buying or selling your home.
-                </p>
-            </div>
+            <img src="/media/images/slide_photo_2.png" alt="Second slide" class="d-block w-100" height="50%">
         </div>
         <div class="carousel-item">
-            <div>
-                <h3 class="NAC_WhyUseRealtorPageTitleH3">Dedication</h3>
-                <p class="carousel-item-text">
-                    A SibirNAX® will be on your team and is committed to protecting your interests. As you navigate
-                    this complex process, they’ll be with you every step of the way.
-                </p>
-            </div>
+            <img src="/media/images/slide_photo_3.png" alt="Third slide" class="d-block w-100" height="50%">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -65,5 +46,7 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+</div>
+
 
 {% endblock %}

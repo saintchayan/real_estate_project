@@ -1,3 +1,4 @@
+from django.core.validators import MinLengthValidator
 from django.db import models
 
 
@@ -58,3 +59,15 @@ class RentSale(models.Model):
 class Picture(models.Model):
     image = models.ImageField(upload_to='images/')
     rentsale = models.ForeignKey(RentSale, on_delete=models.CASCADE, null=True, related_name='pictures')
+
+
+class ClientRequest(models.Model):
+    name = models.CharField(max_length=40, validators=[MinLengthValidator(4)])
+    phone = models.IntegerField()
+    email = models.EmailField(max_length=254, blank=True, null=True)
+    message = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return (f'Имя: {self.name}; '
+                f'Телефон: {self.phone}; '
+                f'Сообщение: {self.message}')

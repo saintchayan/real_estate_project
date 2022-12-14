@@ -14,4 +14,5 @@ urlpatterns = [
     path('privacy_policy/', privacy_policy, name='privacy_policy'),
     path('frequently_asked_questions/', frequently_asked_questions, name='frequently_asked_questions'),
     path('detail/<int:pk>', ObjectDetail.as_view(), name='detail_view'),
+    path('client_request/', ClientRequestView.as_view(), name='client_request'),
 ]

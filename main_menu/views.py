@@ -1,7 +1,9 @@
 from django.http import HttpResponse
 from django.template.loader import render_to_string
+from django.views.generic.edit import FormView
 from rest_framework.viewsets import GenericViewSet
 
+from .forms import ClientRequestForm
 from .models import RentSale
 from django.views.generic import ListView, DetailView
 from rest_framework import mixins
@@ -38,6 +40,12 @@ class Rent(ListView):
 class ObjectDetail(DetailView):
     template_name = 'main_menu/detail_view.html'
     model = RentSale
+
+
+class ClientRequestView(FormView):
+    form_class = ClientRequestForm
+    template_name = 'main_menu/client_request.html'
+    success_url = '/'
 
 
 def contacts(request):

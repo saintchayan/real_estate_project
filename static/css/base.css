@@ -646,7 +646,7 @@ li {
 }
 
 .fullWidth {
-    margin: -16px -16px 15px;
+    margin: -16px -16px -16px;
 }
 
 #homeHeaderFooterCon {
@@ -661,7 +661,7 @@ li {
 
 .whiteRoundedBtn a {
     background-color: #FFFFFF;
-    color: black;
+    color: white;
 }
 
 .whiteRoundedBtn {
@@ -687,22 +687,6 @@ li {
     position: relative;
 }
 
-
-#carouselExampleControls {
-    background-color: #15677B;
-    padding: 50px 50px 50px 50px;
-    min-height: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel slide {
-    background-color: #15677B;
-    padding: 0px;
-    color: white;
-}
-
 #NAC_WhyUseRealtor {
     min-height: 208px;
     padding: 20px;
@@ -711,18 +695,13 @@ li {
 }
 
 .NAC_WhyUseRealtorPageTitleH1 {
+    color: white;
+    background-color: #146376;
     text-align: center;
-    margin-bottom: 15px;
-    margin-top: 0px;
+    margin-bottom: -1px;
+    margin-top: 5px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-.carousel-inner {
-    min-height: 208px;
-    padding: 20px;
-    color: white;
-    text-align: center;
 }
 
 .NAC_WhyUseRealtorPageTitleH3 {

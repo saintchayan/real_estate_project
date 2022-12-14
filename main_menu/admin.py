@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Picture, RentSale
+from .models import Picture, RentSale, ClientRequest
 
 
 class PictureInline(admin.StackedInline):
@@ -19,4 +19,9 @@ class SiteAdmin(admin.ModelAdmin):
 class SiteAdmin(admin.ModelAdmin):
     #     # list_display = ['image']
     #     list_per_page = 100
+    pass
+
+
+@admin.register(ClientRequest)
+class SiteAdmin(admin.ModelAdmin):
     pass
