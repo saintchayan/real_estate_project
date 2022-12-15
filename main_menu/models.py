@@ -62,10 +62,10 @@ class Picture(models.Model):
 
 
 class ClientRequest(models.Model):
-    name = models.CharField(max_length=40, validators=[MinLengthValidator(4)])
-    phone = models.IntegerField()
-    email = models.EmailField(max_length=254, blank=True, null=True)
-    message = models.TextField(blank=True, null=True)
+    name = models.CharField(max_length=40, validators=[MinLengthValidator(4)], help_text='Input your name')
+    phone = models.IntegerField(help_text='Phone number')
+    email = models.EmailField(max_length=254, blank=True, null=True, help_text='Your email (optional)')
+    message = models.TextField(blank=True, null=True, help_text='Your message')
 
     def __str__(self):
         return (f'Имя: {self.name}; '

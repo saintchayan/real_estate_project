@@ -723,3 +723,81 @@ li {
     text-align: center;
 }
 
+.ndnrNwU97ucGQrOfz8zQ {
+    margin: 0;
+}
+
+.ndnrNwU97ucGQrOfz8zQ {
+    flex-grow: 1;
+    max-width: 550px;
+}
+
+.CrSF_yOD51AMkSJy9hjf {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 4 51 / 20%);
+    overflow: auto;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.od0DN2hUKsFnW55ZBTnF {
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: .1px;
+    line-height: 40px;
+    margin: 24px;
+}
+
+.dOm4Gl8t78fUG9SA6lvl {
+    margin: 24px;
+}
+
+.dOm4Gl8t78fUG9SA6lvl {
+    display: flex;
+    flex-direction: column;
+}
+
+.dsrm_formField {
+    color: #000433;
+    margin: 10px 0;
+}
+
+.dsrm_formLabel {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+}
+
+.dsrm_formLabel, .dsrm_helpText {
+    font-family: Effra,sans-serif;
+    font-weight: 400;
+    letter-spacing: .1px;
+}
+
+.dsrm_formField__field {
+    display: flex;
+    margin: 8px 0;
+}
+
+.dsrm_inputText {
+    background-color: #fff;
+    border: 1px solid #888a9a;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #000433;
+    font-family: Effra,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    letter-spacing: .1px;
+    line-height: 24px;
+    padding: 8px 16px;
+    width: 100%;
+}

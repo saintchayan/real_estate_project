@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Quick Contact{% endblock %}
+{% block title %}Contact Us{% endblock %}
 
 {% block head_of_content %}
 <h1></h1>
@@ -8,17 +8,27 @@
 
 {% block content %}
 
-<div class="">
-    <div class="">
-        <h2>QUICK CONTACT</h2>
-    </div>
-    <div class="client_form">
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <input type="submit">
-        </form>
-    </div>
+<div class="ndnrNwU97ucGQrOfz8zQ" style="width: 50%; margin: 0 auto;">
+    <form class="CrSF_yOD51AMkSJy9hjf" action="/" method="POST">
+        {% csrf_token %}
+        <div class="CrSF_yOD51AMkSJy9hjf">
+            <h1 class="od0DN2hUKsFnW55ZBTnF">Contact Us</h1>
+            <div class="dOm4Gl8t78fUG9SA6lvl">
+                {% for field in form %}
+                    <div class="dsrm_formField dlgpBFfaR0zWvrNbWAIS">
+                        <label class="dsrm_formLabel" for="id_{{ field.name }}">{{ field.label }}</label>
+                        <div class="dsrm_formField__field">
+                            <input class="dsrm_inputText dlgpBFfaR0zWvrNbWAIS undefined" type="text"
+                                   name="{{ field.name }}" id="id_{{ field.name }}" placeholder="{{ field.help_text }}">
+                        </div>
+                    </div>
+                {% endfor %}
+                <input type="submit" value="Submit"  class="btn btn-primary">
+            </div>
+        </div>
+    </form>
 </div>
+
+
 
 {% endblock %}
