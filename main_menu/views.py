@@ -1,10 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.views.generic.edit import FormView
 from rest_framework.viewsets import GenericViewSet
 
 from .forms import ClientRequestForm
-from .models import RentSale
+from .models import RentSale, ClientRequest
 from django.views.generic import ListView, DetailView
 from rest_framework import mixins
 from main_menu.serializer import RentSaleSerializer
@@ -46,6 +47,10 @@ class ClientRequestView(FormView):
     form_class = ClientRequestForm
     template_name = 'main_menu/client_request.html'
     success_url = '/'
+
+    def form_valid(self, form):
+        form.save()
+        return super(ClientRequestView, self).form_valid(form)
 
 
 def contacts(request):
