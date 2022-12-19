@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Picture, RentSale, ClientRequest
+from modeltranslation.admin import TranslationAdmin
 
 
 class PictureInline(admin.StackedInline):
@@ -7,7 +8,7 @@ class PictureInline(admin.StackedInline):
 
 
 @admin.register(RentSale)
-class SiteAdmin(admin.ModelAdmin):
+class SiteAdmin(TranslationAdmin):
     # list_display = ['city', 'type', 'district', 'address', 'owner', 'phone_number', 'price_in_lira']
     # ordering = ['district']
     # list_per_page = 10

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load static i18n %}
 
-{% block title %}Rent{% endblock %}
+{% block title %} {% translate 'Rent' %} {% endblock %}
 
 {% block head_of_content %}
 <h1 class="SEOLandingPageTitle"></h1>
@@ -42,12 +43,14 @@
                                                 </div>
                                                 <div class="listingCardBody">
                                                     <div class="listingCardPrice">
-                                                        ₺{{obj.price_in_lira}} per month
+                                                        ₺{{obj.price_in_lira}} {% translate 'per month' %}
                                                     </div>
                                                     <div class="listingCardAddress">
                                                         {{ obj.address }}
                                                     </div>
-                                                    <div class="listingCardOfficeName">SIBIRMAX, ANTALYA</div>
+                                                    <div class="listingCardOfficeName">
+                                                        SIBIRMAX, {% translate 'ANTALYA' %}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </a>

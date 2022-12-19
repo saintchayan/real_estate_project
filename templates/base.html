@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,22 +41,38 @@
                         <span id="langToggle" class="ControlBaseWrapper ">
                             <div id="toggleSwitchCon ">
                                 <div class="toggleSwitchInnerCon">
-                                    <a href="/" class="toggleOption " data-value="1">
+                                    <a href="" class="toggleOption " data-value="1">
                                         <img src="/media/images/uk-icon.png" alt="uk-icon">
                                     </a>
-                                    <a href="/" class="toggleOption " data-value="2">
+                                    <a href="" class="toggleOption " data-value="2">
                                         <img src="/media/images/tur-icon.png" alt="tur-icon">
                                     </a>
-                                    <a href="/" class="toggleOption " data-value="4">
+                                    <a href="" class="toggleOption " data-value="4">
                                         <img src="/media/images/arab-icon.svg" alt="arab-icon">
                                     </a>
-                                    <a href="/" class="toggleOption " data-value="3">
+                                    <a href="" class="toggleOption " data-value="3">
                                         <img src="/media/images/rus-icon.png" alt="rus-icon">
                                     </a>
                                 </div>
                             </div>
                         </span>
                     </div>
+                    <div>
+                    <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <select name="language">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                    {{ language.name_local }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                        <input type="submit" value="{% translate 'Go' %}">
+                    </form>
+                </div>
                 </div>
             </header>
             <script>var Header = new Controls.Desktop.Header(null, 'Header');</script>
@@ -62,16 +80,16 @@
         <span id="ctl35" class="ControlBaseWrapper ">
             <div id="headerMenu" class="noPrint">
                 <div class="headerMenuItem">
-                    <a href="{% url 'sale_list'%}">SALE</a>
+                    <a href="{% url 'sale_list'%}">{% translate 'SALE' %}</a>
                 </div>
                 <div class="headerMenuItem ">
-                    <a href="{% url 'rent_list'%}">RENT</a>
+                    <a href="{% url 'rent_list'%}">{% translate 'RENT' %}</a>
                 </div>
                 <div class="headerMenuItem ">
-                    <a href="{% url 'resident_card'%}">RESIDENT PERMIT</a>
+                    <a href="{% url 'resident_card'%}">{% translate 'RESIDENT PERMIT' %}</a>
                 </div>
                 <div class="headerMenuItem ">
-                    <a href="{% url 'medical_insurance'%}">MEDICAL INSURANCE</a>
+                    <a href="{% url 'medical_insurance'%}">{% translate 'MEDICAL INSURANCE' %}</a>
                 </div>
             </div>
         </span>
@@ -101,25 +119,34 @@
             <footer id="footer">
                 <div id="footerLinkCon" class="noPrint">
                     <div class="footerCol">
-                        <a href="{% url 'sale_list'%}" class="footerColItem" id="lnkFooter_Sale">Sale</a>
-                        <a href="{% url 'rent_list'%}" class="footerColItem" id="lnkFooter_Rent">Rent</a>
-                        <a href="{% url 'medical_insurance'%}" class="footerColItem" id="lnkFooter_MedIns">Medical insurance</a>
-                        <a href="{% url 'resident_card'%}" class="footerColItem" id="lnkFooter_resident">Resident permit</a>
+                        <a href="{% url 'sale_list'%}" class="footerColItem" id="lnkFooter_Sale">
+                            {% translate 'Sale' %}</a>
+                        <a href="{% url 'rent_list'%}" class="footerColItem" id="lnkFooter_Rent">
+                            {% translate 'Rent' %}</a>
+                        <a href="{% url 'medical_insurance'%}" class="footerColItem" id="lnkFooter_MedIns">
+                            {% translate 'Medical insurance' %}</a>
+                        <a href="{% url 'resident_card'%}" class="footerColItem" id="lnkFooter_resident">
+                            {% translate 'Resident permit' %}</a>
                     </div>
                     <div class="footerCol">
                         <a href="https://en.goc.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_goc">
-                            Presidency of Migration Management</a>
+                            {% translate 'Presidency of Migration Management' %}</a>
                         <a href="https://www.antalya.bel.tr/" target="_blank" class="footerColItem"
-                           id="lnkFooter_Metropolitan">Antalya Metropolitan Municipality</a>
+                           id="lnkFooter_Metropolitan">{% translate 'Antalya Metropolitan Municipality' %}</a>
                         <a href="http://www.antalya.gov.tr/" target="_blank" class="footerColItem" id="lnkFooter_gov">
-                            T.C. Antalya Prefecture</a>
-                        <a href="{% url 'frequently_asked_questions'%}" class="footerColItem" id="lnkFooter_faq">Frequently Asked Questions</a>
+                            {% translate 'T.C. Antalya Prefecture' %}</a>
+                        <a href="{% url 'frequently_asked_questions'%}" class="footerColItem" id="lnkFooter_faq">
+                            {% translate 'Frequently Asked Questions' %}</a>
                     </div>
                     <div class="footerCol">
-                        <a href="{% url 'privacy_policy'%}" class="footerColItem" id="lnkFooter_privacy">Privacy Policy</a>
-                        <a href="{% url 'terms_of_use'%}" class="footerColItem" id="lnkFooter_Terms">Terms of Use</a>
-                        <a href="{% url 'contacts'%}" class="footerColItem" id="lnkFooter_contacts">Contacts</a>
-                        <a href="{% url 'about_us'%}" class="footerColItem" id="lnkFooter_info">About us</a>
+                        <a href="{% url 'privacy_policy'%}" class="footerColItem" id="lnkFooter_privacy">
+                            {% translate 'Privacy Policy' %}</a>
+                        <a href="{% url 'terms_of_use'%}" class="footerColItem" id="lnkFooter_Terms">
+                            {% translate 'Terms of Use' %}</a>
+                        <a href="{% url 'contacts'%}" class="footerColItem" id="lnkFooter_contacts">
+                            {% translate 'Contacts' %}</a>
+                        <a href="{% url 'about_us'%}" class="footerColItem" id="lnkFooter_info">
+                            {% translate 'About us' %}</a>
                     </div>
                 </div>
                 <div id="footerSocialAppCon" class="noPrint">
@@ -127,7 +154,7 @@
                         <div class="footerLabel"></div>
                     </div>
                     <div class="footerSocialAppConRight">
-                        <div class="footerLabel">STAY CONNECTED</div>
+                        <div class="footerLabel">{% translate 'STAY CONNECTED' %}</div>
                         <div class="footerContent">
                             <a href="https://www.instagram.com/mergen_siberia/" rel="noopener noreferrer" target="_blank">
                                 <img src="/media/images/inst-icon.png" style="height: 25px; width: 25px;" alt="inst-icon">

@@ -1,0 +1,947 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-20 08:39+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+#: main_menu/templates/main_menu/about_us.html:4
+#: main_menu/templates/main_menu/terms_of_use.html:17
+msgid "Copyright"
+msgstr ""
+
+#: main_menu/templates/main_menu/about_us.html:12 templates/base.html:149
+msgid "About us"
+msgstr ""
+
+#: main_menu/templates/main_menu/about_us.html:15
+msgid ""
+"Our story started like many good things in life, a spur-of-the-moment kind "
+"of idea followed by the proper planning, hard work and commitment that can "
+"turn a good thing into something great."
+msgstr ""
+
+#: main_menu/templates/main_menu/about_us.html:20
+msgid ""
+"We have come a long way since inception, and at this point, we can humbly "
+"say that we have proven to be up to the property management challenge and "
+"continue to strive to deliver quality services that are priced right. We "
+"strongly believe in an engagement that benefits all involved parties and is "
+"sustainable for the long run. We strive to market and rent properties as "
+"quickly as possible but do not sacrifice tenant screening and due diligence "
+"so that only the most suitable candidates are considered. "
+msgstr ""
+
+#: main_menu/templates/main_menu/about_us.html:26
+msgid ""
+"Buying, selling or renting a home is likely the largest and most important "
+"transaction you’ll ever make. That’s why so many trust SibirMAX: the most "
+"widely recognized real estate brand in the world. For more than 5 years, "
+"SibirMAX has been the leading real estate organization in Antalya/Turkey. By "
+"providing the best training, administrative and marketing support, brokers "
+"and agents are free to focus on what they do best: sell, rent, buy real "
+"estate."
+msgstr ""
+
+#: main_menu/templates/main_menu/about_us.html:32
+msgid ""
+"Several ancillary services that are aligned with our expertise have been "
+"added to our comprehensive service offerings to complement our business "
+"model. "
+msgstr ""
+
+#: main_menu/templates/main_menu/about_us.html:38
+msgid ""
+"We are well staffed to accept more clients and build solid long-term "
+"relationships and encourage you to contact us for a free quote and allow us "
+"the opportunity to partner together. "
+msgstr ""
+
+#: main_menu/templates/main_menu/client_request.html:4
+#: main_menu/templates/main_menu/client_request.html:16
+msgid "Contact Us"
+msgstr ""
+
+#: main_menu/templates/main_menu/contacts.html:4 templates/base.html:147
+msgid "Contacts"
+msgstr ""
+
+#: main_menu/templates/main_menu/contacts.html:13
+msgid "Location"
+msgstr ""
+
+#: main_menu/templates/main_menu/contacts.html:16
+msgid "Hours"
+msgstr ""
+
+#: main_menu/templates/main_menu/contacts.html:17
+msgid "Monday–Friday"
+msgstr ""
+
+#: main_menu/templates/main_menu/contacts.html:19
+msgid "Phone"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:28
+#: main_menu/templates/main_menu/rent.html:46
+msgid "per month"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:39
+msgid "Province:"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:40
+msgid "Address:"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:43
+msgid "District:"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:55
+msgid "Bedrooms"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:64
+msgid "Floor"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:73
+msgid "Square"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:84
+msgid "Description"
+msgstr ""
+
+#: main_menu/templates/main_menu/detail_view.html:90
+msgid "Data"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:4
+msgid "FAQ"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:12
+msgid "Why do visitors love The SibirMax Real Estate Studio?"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:14
+msgid ""
+"SibirMax provides real estate buyers, sellers and investors with access "
+"trustworthy, up-to-date listings by certified professionals from Antalya."
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:16
+msgid "SibirMax visitors can:"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:18
+msgid "search properties using their personal criteria;"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:19
+msgid "learn how SibirMax can help them through the real estate process;"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:20
+msgid "share their favourite listings with friends and family;"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:21
+msgid ""
+"get notified as soon as a new listing matching their saved search criteria "
+"is available;"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:22
+msgid ""
+"use the mortgage calculator and other financial tools to help them determine "
+"what they can afford;"
+msgstr ""
+
+#: main_menu/templates/main_menu/frequently_asked_questions.html:23
+msgid ""
+"learn more about a property’s neighbourhood with detailed demographic "
+"information for each listing."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:4
+#: templates/base.html:127
+msgid "Medical insurance"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:13
+msgid "Healthcare in Turkey for Expats and Foreigners"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:16
+msgid ""
+"Every year, thousands of patients from all over the world come to Turkey to "
+"get medical services. The success of the healthcare system has increased in "
+"recent years. It’s easy to find well-educated and English-speaking medical "
+"professionals in Turkey."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:19
+msgid ""
+"A recent study published in The Lancet ranks Turkey’s healthcare system 60th "
+"among 195 countries in the world. The increasing number of medical schools "
+"and specialists in the country is a sign of this. If you’re planning to live "
+"in Turkey, it’s time that you become acquainted with the healthcare system "
+"in the country."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:24
+msgid "The Healthcare System In Turkey"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:27
+msgid ""
+"Healthcare in Turkey consists of both public and private health services. "
+"The Ministry of Health (MOH), universities, and the private sector provide "
+"healthcare services. Foreigners and expats living in Turkey can apply for "
+"health benefits in two ways;  Universal Health Insurance and private health "
+"insurance. The European Health Insurance Card is not efficient in Turkey. "
+"Also, health insurance is compulsory in Turkey. Thus, you’ll need health "
+"insurance to get residency or work permits."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:32
+msgid "Universal Health Insurance in Turkey"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:35
+msgid ""
+"Universal Health Insurance covers most health issues such as emergencies, "
+"pregnancy, and illnesses. Social Security Institution (SGK) administers "
+"general healthcare in Turkey.  To do so, you need to contact the nearest "
+"social security center. If you enroll in this scheme, you can also enjoy "
+"discounts in private hospitals. But, note that state hospitals are sometimes "
+"very crowded."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:38
+msgid "How Can You Apply for Universal Health Insurance"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:41
+msgid ""
+"If you’ve lived in Turkey for one year, you’re eligible to apply. You can "
+"access all the medical care with a monthly fee. The monthly premium for 2021 "
+"is about ₺850, and it changes every year. You can get updated information "
+"from the application centers for healthcare in Turkey for foreigners. There "
+"are approximately 600 social security centers in the country.  When you "
+"apply for SGK, your spouse and children under 18 can benefit from healthcare "
+"for foreigners."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:44
+msgid "Treatment services covered by SGK:"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:47
+msgid "Inpatient and outpatient services"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:48
+msgid "Occupational accidents and diseases"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:49
+msgid "Pregnancy, birth, and related expenses"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:50
+msgid "Discounts in private hospitals and clinics, etc."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:51
+msgid "Infectious diseases"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:52
+msgid "Preventive health services"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:53
+msgid ""
+"Treatment costs of foreigners and their dependents, except for chronic "
+"diseases"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:58
+msgid "Private Health Insurance in Turkey"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:60
+msgid ""
+"You can get private health insurance in Turkey by paying a monthly fee to an "
+"insurance company. Private health insurance offers more benefits than SGK "
+"does. These are shorter waiting times, the highest quality of care, and "
+"fewer unexpected expenses. Also, it’s easy to find more English-speaking "
+"doctors in private hospitals. So, you may prefer a private healthcare option "
+"rather than SGK."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:63
+msgid "Treatment services covered by private insurance:"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:66
+msgid "Medical examination costs"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:67
+msgid "Costs for diagnostic examinations"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:68
+msgid "Medication costs"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:69
+msgid ""
+"Hospital services (operation, anesthesia, medication, laboratory, radiology, "
+"etc.)"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:70
+msgid "Room, bed, meal, and accompanying expenses during hospitalization."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:71
+msgid "Corneal, kidney, pancreas, liver, heart, lung transplantation."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:72
+msgid "Chemotherapy, radiation therapy, dialysis"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:73
+msgid ""
+"Diagnostic biochemical, microbiological, pathological, radiological, and "
+"imaging tests during hospitalization."
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:74
+msgid ""
+"Costs of artificial limbs in case of loss of limbs due to an accident or "
+"illness"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:75
+msgid "Postoperative physical therapy"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:76
+msgid ""
+"Medical treatments for less than 24 hours (food poisoning, simple burn "
+"treatments)"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:77
+msgid "Treatments in intensive care"
+msgstr ""
+
+#: main_menu/templates/main_menu/medical_insurance.html:78
+msgid "Therapies related to teeth and nose caused by a traffic accident"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:4
+msgid "Menu"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:18
+msgid "Find homes and apartments from trusted SibirMAX"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:23
+msgid "Need help finding a realtor?"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:25
+msgid "Get Started"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:43
+msgid "Why use SibirMAX Real Estate Studio?"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:48
+msgid "Expertise"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:50
+msgid ""
+"By working with SibirMAX, you’ll be able to navigate complicated situations "
+"like a pro. SibirMAX have the expertise required to help strategize, "
+"negotiate and achieve the best outcomes possible. Plus, they’ll provide "
+"expert guidance throughout the entire home buying and selling journey."
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:57
+msgid "Knowledge"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:59
+msgid ""
+"With valuable real estate market knowledge, SibirMAX work to ensure you’re "
+"getting objective and accurate information when it comes to buying or "
+"selling your home."
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:67
+msgid "Dedication"
+msgstr ""
+
+#: main_menu/templates/main_menu/menu.html:69
+msgid ""
+"SibirMAX will be on your team and is committed to protecting your interests. "
+"As you navigate this complex process, they’ll be with you every step of the "
+"way."
+msgstr ""
+
+#: main_menu/templates/main_menu/privacy_policy.html:4 templates/base.html:143
+msgid "Privacy Policy"
+msgstr ""
+
+#: main_menu/templates/main_menu/privacy_policy.html:12
+msgid "Welcome!"
+msgstr ""
+
+#: main_menu/templates/main_menu/privacy_policy.html:14
+msgid ""
+"The SibirMax Real Estate Studio is committed to clearly explaining to you "
+"what it does with your personal information. On this webpage you’ll find "
+"information about the types of personal information we gather, how we use "
+"it, and whether we provide some of that information to anyone else."
+msgstr ""
+
+#: main_menu/templates/main_menu/privacy_policy.html:17
+msgid ""
+"For starters, you’ll see that we refer to “privacy policy” and “privacy "
+"policies” throughout this webpage. Don’t get confused! The simplest way to "
+"wrap your head around this is to think of SibirMax’s “privacy policy” as the "
+"combined total of all of SibirMax’s “privacy policies”, which are specific "
+"portions of our overall policy."
+msgstr ""
+
+#: main_menu/templates/main_menu/privacy_policy.html:19
+msgid ""
+"When we say “personal information” what we mean is any information about an "
+"identifiable individual not including:"
+msgstr ""
+
+#: main_menu/templates/main_menu/privacy_policy.html:21
+msgid ""
+"The name, title, business email, business address or telephone number of an "
+"individual when collected, used and disclosed solely for the purpose of "
+"communicating or facilitating communication with the individual in relation "
+"to their employment, business or profession;"
+msgstr ""
+
+#: main_menu/templates/main_menu/privacy_policy.html:23
+msgid ""
+"Aggregated information that cannot be associated with a specific individual."
+msgstr ""
+
+#: main_menu/templates/main_menu/rent.html:4 templates/base.html:125
+msgid "Rent"
+msgstr ""
+
+#: main_menu/templates/main_menu/rent.html:52
+#: main_menu/templates/main_menu/sale.html:52
+msgid "ANTALYA"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:4
+msgid "Resident card"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:13
+msgid "Turkey Residence Permit"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:16
+msgid ""
+"A Residence Permit in Turkey refers to an official confirmation and "
+"authorization for an individual to live in the country for over three months "
+"within half a year. It is generally issued to people intending to stay in "
+"Turkey for an extended duration, either for work, study, or settlement "
+"purposes."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:19
+msgid ""
+"An extended duration, either for work, study, or settlement purposes. "
+"Receiving a residence permit means you can live, study, marry, get a tax "
+"number, open a bank account, convert to a Turkish drivers’ license, purchase "
+"property, invest in any sector, and enjoy most of the perks that Turkish "
+"citizens do. However, if you are moving to Turkey to work, you won’t need a "
+"residence permit, but a Turkey work permit only as it will be your residence "
+"permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:24
+msgid "Who needs to apply for a Turkey Residence Permit?"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:27
+msgid ""
+"Anyone intending to move to Turkey to stay for more than three months will "
+"have to obtain a Turkey Residence Permit after arriving in the country. "
+"Without it, the stay will be considered illegal."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:32
+msgid "Who’s Exempt from Acquiring a Residence Permit in Turkey?"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:35
+msgid ""
+"If one or more of the following conditions apply to you, you will be exempt "
+"from applying for a residence permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:38
+msgid ""
+"You hold a Registration Certificate for international protection application."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:39
+msgid ""
+"You have an exemption from a residence permit pursuant to multilateral/"
+"reciprocal conventions to which the Republic of Turkey is a party."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:40
+msgid "You are a consulate or diplomatic officer holding office in Turkey."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:41
+msgid ""
+"You are a representative of offices of international establishments in the "
+"Republic of Turkey."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:46
+msgid "Your Identity Card has any of the following tags:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:49
+msgid "International protection applicant."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:50
+msgid "International protection status."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:51
+msgid "Statelessness"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:52
+msgid "You hold a valid work permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:57
+msgid "Types of Turkish Residence Permit:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:60
+msgid ""
+"Turkey offers many residence permits. The permit type you need depends on "
+"the visa type you hold, the intended period of residence in the country, and "
+"the purpose of application. Presented below is an overview of the different "
+"types of Turkey Residence Permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:65
+msgid "Short-term Residence Permit:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:68
+msgid ""
+"It is among the most sought-after residence permits in Turkey. You can apply "
+"for this permit if your stay in Turkey will be for any of the following "
+"reasons/purposes."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:71
+msgid "Scientific research"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:72
+msgid "Establish commercial links/business"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:73
+msgid "Attend an in-service training program"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:74
+msgid ""
+"For educational or any purpose that comes within the framework of student "
+"exchange programs"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:75
+msgid "Tourism"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:76
+msgid ""
+"For receiving medical treatment provided that you don’t carry a disease "
+"that’s considered a threat to public health"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:77
+msgid "For attending Turkish learning courses"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:78
+msgid "Those who are a citizen of the Turkish Republic of Northern Cyprus"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:83
+msgid "Family Residence Permit:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:86
+msgid ""
+"It is usually granted to the foreign spouse of a Turkish citizen/national, "
+"their minor children and their dependent foreign child (if any). The sponsor "
+"should have enough income to support the spouse and those applying for the "
+"residence permit. If this condition isn’t met, it will become difficult for "
+"them to get the permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:91
+msgid "Student Residence Permit:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:94
+msgid ""
+"If you are in Turkey for the sole purpose of enrolling in an educational "
+"institute, either for primary or secondary education, you can apply for a "
+"student residence permit. If you have a family residence permit, then you "
+"won’t need to obtain this permit. Remember that you will become eligible for "
+"a student residence permit if you plan to study at the associate, "
+"bachelor’s, master’s degrees, doctorate, speciality training in medicine or "
+"dentistry, or an equivalent program in a higher education institute in the "
+"Republic of Turkey."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:99
+msgid "Long-term Residence Permit:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:102
+msgid ""
+"If you lived in Turkey for at least 8 years without any interruption under "
+"an officially issued residence permit, you are eligible to apply for a long-"
+"term residence permit. This permit will have indefinite validity."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:105
+msgid ""
+"Please note that if you lived in Turkey for a certain period as a "
+"conditional refugee, refugee, humanitarian residence permit holder, "
+"secondary protection status holder, and temporary protection, you would not "
+"be eligible to apply for a long-term residency permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:110
+msgid "Humanitarian Residence Permit:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:113
+msgid ""
+"Suppose you live in Turkey without a valid residence permit or a visa, and "
+"the deportation decision has not been taken against you as yet. In that "
+"case, you can apply for a humanitarian residence permit. Those waiting for "
+"deportation and people unable to return to their home country due to "
+"emergency reasons can also apply for this permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:118
+msgid "Residence permit for victims of Human Trafficking:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:121
+msgid ""
+"If you have been a victim of human trafficking and are residing in Turkey, "
+"you can apply for this permit."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:126
+msgid "How to Apply for a Residence Permit in Turkey?"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:129
+msgid ""
+"If you want to apply for a Turkey residence permit, you need to follow "
+"several procedures. Firstly, please remember that you can only apply for a "
+"residence permit within one month of your arrival in the country."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:132
+msgid ""
+"The next and a crucial step is to determine which type of residence permit "
+"you will need. After you have decided, please complete an online application "
+"form https://e-ikamet.goc.gov.tr/. You will have to provide personal and "
+"professional details, such as full name, surname, parents’ names, date of "
+"birth, nationality, phone number, etc."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:135
+msgid ""
+"After submitting the form, you will have to visit the Central Appointment "
+"System website to book an appointment with the nearest Directorate General "
+"of Migration Management office. This process will be similar to the "
+"application process. All you have to do is complete another form and provide "
+"your residence details in Turkey. You will receive the address of the "
+"nearest DGMM office as well as a list of necessary documents you need to "
+"provide, the times and dates available for appointment, and the application "
+"and card fee, which you will have to pay to initiate the process formally."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:140
+msgid "Documents Required for a Turkey Residence Permit:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:143
+msgid ""
+"You will submit some necessary documents when you arrive at the DGMM office "
+"on your appointment. The required documents include:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:146
+msgid "The Residence permit application form"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:147
+msgid "At least 4 biometric photographs"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:148
+msgid "Your original passport"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:149
+msgid "A notarized copy of your passport or any equivalent travel document"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:150
+msgid ""
+"Proof of sustainable/sufficient financial resources to support your entire "
+"duration of the stay in Turkey. You should have enough funds in your bank "
+"account to afford a minimum of €500 for each month you will spend in Turkey. "
+"Or else, you can present proof that you’ll receive that amount monthly."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:155
+msgid "Health Insurance:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:158
+msgid ""
+"Depending on your situation, the residence permit type you have applied for, "
+"and your country of origin, you will have to provide additional support "
+"documents. Do make sure that you present them all on your appointment day."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:163
+msgid "Residence Permit Validity:"
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:166
+msgid ""
+"The validity of a Turkish residence Permit depends on permit type. Here is a "
+"breakdown of the validity duration of all types of permits."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:169
+msgid ""
+"Short-term Residence Permit-It is valid for a maximum duration of two years "
+"at a time."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:170
+msgid "Long-term Residence Permit- Indefinite validity."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:171
+msgid ""
+"Student Residence Permit:Its validity depends on the length of the course/"
+"study program. If it is less than one year, the permit validity will be one "
+"year."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:172
+msgid ""
+"Family Residence Permit:It can be issued for up to three years at a time."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:173
+msgid ""
+"Humanitarian Residence Permit:This permit is granted/extended for a max "
+"duration of one year."
+msgstr ""
+
+#: main_menu/templates/main_menu/resident_card.html:174
+msgid ""
+"Residence Permit for the victims of human trafficking:It is issued for a max "
+"duration of thirty days"
+msgstr ""
+
+#: main_menu/templates/main_menu/sale.html:4 templates/base.html:123
+msgid "Sale"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:4
+#: main_menu/templates/main_menu/terms_of_use.html:12
+#: main_menu/templates/main_menu/terms_of_use.html:41
+msgid "Terms of Use Agreement"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:14
+msgid ""
+"By accessing any of the websites or mobile applications (collectively, "
+"hereinafter \"website\" or \"websites\") operated by The SibirMax Real "
+"Estate Studio, you, the user, agree to be bound by all of the terms for use "
+"and agree these terms constitute a binding contract between the user and "
+"SibirMax."
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:19
+#: main_menu/templates/main_menu/terms_of_use.html:28
+msgid ""
+"This website/database is a copyright-protected work which is owned by "
+"SibirMax. Part of the contents of this website/database, including all real "
+"estate listings and related information, images and photographs "
+"(collectively, Listing Content), are also protected by copyright, which is "
+"owned by the SibirMax members who supplied the content and/or by third "
+"parties, and is reproduced in this website/database under license. The "
+"contents of this website/database, including the Listing Content, are "
+"intended for the private, non-commercial use by individuals. Any commercial "
+"use of the website/database, including the Listing Content, in whole or in "
+"part, directly or indirectly, is specifically forbidden except with the "
+"prior written authority of the owner of the copyright."
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:22
+msgid "Trademarks"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:24
+msgid "Not all real estate agents are SibirMax."
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:31
+msgid "Links to Website"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:33
+msgid ""
+"Users may link to the website. However, SibirMax reserves the right to "
+"refuse a link at any time at SibirMax's sole discretion. The user agrees to "
+"remove any link to the website at SibirMax's request."
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:36
+msgid "Links to Third Party Sites"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:38
+msgid ""
+"This website may contain hyperlinks to websites operated by parties other "
+"than SibirMax. Such hyperlinks are provided for the user's reference only. "
+"SibirMax does not control such websites and is not responsible for their "
+"contents or the privacy or other practices of such websites."
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:43
+msgid ""
+"The user acknowledges that their personal information will be used by the "
+"website in accordance with the website privacy policy located at"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:44
+msgid "here"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:47
+msgid "Governing Law"
+msgstr ""
+
+#: main_menu/templates/main_menu/terms_of_use.html:49
+msgid ""
+"These Terms of Use shall be governed by the laws of Antalya, Turkey. The "
+"courts in Ankara, Antalya, will have exclusive jurisdiction to hear and "
+"decide any disputes relating to these Terms of Use."
+msgstr ""
+
+#: templates/base.html:73
+msgid "Go"
+msgstr ""
+
+#: templates/base.html:83
+msgid "SALE"
+msgstr ""
+
+#: templates/base.html:86
+msgid "RENT"
+msgstr ""
+
+#: templates/base.html:89
+msgid "RESIDENT PERMIT"
+msgstr ""
+
+#: templates/base.html:92
+msgid "MEDICAL INSURANCE"
+msgstr ""
+
+#: templates/base.html:129
+msgid "Resident permit"
+msgstr ""
+
+#: templates/base.html:133
+msgid "Presidency of Migration Management"
+msgstr ""
+
+#: templates/base.html:135
+msgid "Antalya Metropolitan Municipality"
+msgstr ""
+
+#: templates/base.html:137
+msgid "T.C. Antalya Prefecture"
+msgstr ""
+
+#: templates/base.html:139
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: templates/base.html:145
+msgid "Terms of Use"
+msgstr ""
+
+#: templates/base.html:157
+msgid "STAY CONNECTED"
+msgstr ""

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load static i18n %}
 
-{% block title %}Resident card{% endblock %}
+{% block title %} {% translate 'Resident card' %} {% endblock %}
 
 {% block head_of_content %}
 <h1></h1>
@@ -9,206 +10,168 @@
 {% block content %}
 
 <h3>
-    Turkey Residence Permit
+    {% translate 'Turkey Residence Permit' %}
 </h3>
 <p>
-    A Residence Permit in Turkey refers to an official confirmation and authorization for an individual to live in the
-    country for over three months within half a year. It is generally issued to people intending to stay in Turkey for
-    an extended duration, either for work, study, or settlement purposes.
+    {% translate 'A Residence Permit in Turkey refers to an official confirmation and authorization for an individual to live in the country for over three months within half a year. It is generally issued to people intending to stay in Turkey for an extended duration, either for work, study, or settlement purposes.' %}
 </p>
 <p>
-    An extended duration, either for work, study, or settlement purposes. Receiving a residence permit means you can
-    live, study, marry, get a tax number, open a bank account, convert to a Turkish drivers’ license, purchase
-    property, invest in any sector, and enjoy most of the perks that Turkish citizens do. However, if you are moving
-    to Turkey to work, you won’t need a residence permit, but a Turkey work permit only as it will be your residence
-    permit.
+    {% translate 'An extended duration, either for work, study, or settlement purposes. Receiving a residence permit means you can live, study, marry, get a tax number, open a bank account, convert to a Turkish drivers’ license, purchase property, invest in any sector, and enjoy most of the perks that Turkish citizens do. However, if you are moving to Turkey to work, you won’t need a residence permit, but a Turkey work permit only as it will be your residence permit.' %}
 </p>
 
 
 <h3>
-    Who needs to apply for a Turkey Residence Permit?
+    {% translate 'Who needs to apply for a Turkey Residence Permit?' %}
 </h3>
 <p>
-    Anyone intending to move to Turkey to stay for more than three months will have to obtain a Turkey Residence
-    Permit after arriving in the country. Without it, the stay will be considered illegal.
+    {% translate 'Anyone intending to move to Turkey to stay for more than three months will have to obtain a Turkey Residence Permit after arriving in the country. Without it, the stay will be considered illegal.' %}
 </p>
 
 
 <h3>
-    Who’s Exempt from Acquiring a Residence Permit in Turkey?
+    {% translate 'Who’s Exempt from Acquiring a Residence Permit in Turkey?' %}
 </h3>
 <p>
-    If one or more of the following conditions apply to you, you will be exempt from applying for a residence permit.
+    {% translate 'If one or more of the following conditions apply to you, you will be exempt from applying for a residence permit.' %}
 </p>
 <ul>
-    <li>You hold a Registration Certificate for international protection application.</li>
-    <li>You have an exemption from a residence permit pursuant to multilateral/reciprocal conventions to which the
-        Republic of Turkey is a party.</li>
-    <li>You are a consulate or diplomatic officer holding office in Turkey.</li>
-    <li>You are a representative of offices of international establishments in the Republic of Turkey.</li>
+    <li>{% translate 'You hold a Registration Certificate for international protection application.' %}</li>
+    <li>{% translate 'You have an exemption from a residence permit pursuant to multilateral/reciprocal conventions to which the Republic of Turkey is a party.' %}</li>
+    <li>{% translate 'You are a consulate or diplomatic officer holding office in Turkey.' %}</li>
+    <li>{% translate 'You are a representative of offices of international establishments in the Republic of Turkey.' %}</li>
 </ul>
 
 
 <h3>
-    Your Identity Card has any of the following tags:
+    {% translate 'Your Identity Card has any of the following tags:' %}
 </h3>
 <ul>
-    <li>International protection applicant.</li>
-    <li>International protection status.</li>
-    <li>Statelessness</li>
-    <li>You hold a valid work permit.</li>
+    <li>{% translate 'International protection applicant.' %}</li>
+    <li>{% translate 'International protection status.' %}</li>
+    <li>{% translate 'Statelessness' %}</li>
+    <li>{% translate 'You hold a valid work permit.' %}</li>
 </ul>
 
 
 <h3>
-    Types of Turkish Residence Permit:
+    {% translate 'Types of Turkish Residence Permit:' %}
 </h3>
 <p>
-    Turkey offers many residence permits. The permit type you need depends on the visa type you hold, the intended
-    period of residence in the country, and the purpose of application. Presented below is an overview of the different
-    types of Turkey Residence Permit.
+    {% translate 'Turkey offers many residence permits. The permit type you need depends on the visa type you hold, the intended period of residence in the country, and the purpose of application. Presented below is an overview of the different types of Turkey Residence Permit.' %}
 </p>
 
 
 <h3>
-    Short-term Residence Permit:
+    {% translate 'Short-term Residence Permit:' %}
 </h3>
 <p>
-    It is among the most sought-after residence permits in Turkey. You can apply for this permit if your stay in
-    Turkey will be for any of the following reasons/purposes.
+    {% translate 'It is among the most sought-after residence permits in Turkey. You can apply for this permit if your stay in Turkey will be for any of the following reasons/purposes.' %}
 </p>
 <ul>
-    <li>Scientific research</li>
-    <li>Establish commercial links/business</li>
-    <li>Attend an in-service training program</li>
-    <li>For educational or any purpose that comes within the framework of student exchange programs</li>
-    <li>Tourism</li>
-    <li>For receiving medical treatment provided that you don’t carry a disease that’s considered a threat to public
-        health</li>
-    <li>For attending Turkish learning courses</li>
-    <li>Those who are a citizen of the Turkish Republic of Northern Cyprus</li>
+    <li>{% translate 'Scientific research' %}</li>
+    <li>{% translate 'Establish commercial links/business' %}</li>
+    <li>{% translate 'Attend an in-service training program' %}</li>
+    <li>{% translate 'For educational or any purpose that comes within the framework of student exchange programs' %}</li>
+    <li>{% translate 'Tourism' %}</li>
+    <li>{% translate 'For receiving medical treatment provided that you don’t carry a disease that’s considered a threat to public health' %}</li>
+    <li>{% translate 'For attending Turkish learning courses' %}</li>
+    <li>{% translate 'Those who are a citizen of the Turkish Republic of Northern Cyprus' %}</li>
 </ul>
 
 
 <h3>
-    Family Residence Permit:
+    {% translate 'Family Residence Permit:' %}
 </h3>
 <p>
-    It is usually granted to the foreign spouse of a Turkish citizen/national, their minor children and their
-    dependent foreign child (if any). The sponsor should have enough income to support the spouse and those applying
-    for the residence permit. If this condition isn’t met, it will become difficult for them to get the permit.
+    {% translate 'It is usually granted to the foreign spouse of a Turkish citizen/national, their minor children and their dependent foreign child (if any). The sponsor should have enough income to support the spouse and those applying for the residence permit. If this condition isn’t met, it will become difficult for them to get the permit.' %}
 </p>
 
 
 <h3>
-    Student Residence Permit:
+    {% translate 'Student Residence Permit:' %}
 </h3>
 <p>
-    If you are in Turkey for the sole purpose of enrolling in an educational institute, either for primary or
-    secondary education, you can apply for a student residence permit. If you have a family residence permit, then
-    you won’t need to obtain this permit. Remember that you will become eligible for a student residence permit if
-    you plan to study at the associate, bachelor’s, master’s degrees, doctorate, speciality training in medicine or
-    dentistry, or an equivalent program in a higher education institute in the Republic of Turkey.
+    {% translate 'If you are in Turkey for the sole purpose of enrolling in an educational institute, either for primary or secondary education, you can apply for a student residence permit. If you have a family residence permit, then you won’t need to obtain this permit. Remember that you will become eligible for a student residence permit if you plan to study at the associate, bachelor’s, master’s degrees, doctorate, speciality training in medicine or dentistry, or an equivalent program in a higher education institute in the Republic of Turkey.' %}
 </p>
 
 
 <h3>
-    Long-term Residence Permit:
+    {% translate 'Long-term Residence Permit:' %}
 </h3>
 <p>
-    If you lived in Turkey for at least 8 years without any interruption under an officially issued residence permit,
-    you are eligible to apply for a long-term residence permit. This permit will have indefinite validity.
+    {% translate 'If you lived in Turkey for at least 8 years without any interruption under an officially issued residence permit, you are eligible to apply for a long-term residence permit. This permit will have indefinite validity.' %}
 </p>
 <p>
-    Please note that if you lived in Turkey for a certain period as a conditional refugee, refugee, humanitarian
-    residence permit holder, secondary protection status holder, and temporary protection, you wouldn’t be eligible to
-    apply for a long-term residency permit.
+    {% translate 'Please note that if you lived in Turkey for a certain period as a conditional refugee, refugee, humanitarian residence permit holder, secondary protection status holder, and temporary protection, you would not be eligible to apply for a long-term residency permit.' %}
 </p>
 
 
 <h3>
-    Humanitarian Residence Permit:
+    {% translate 'Humanitarian Residence Permit:' %}
 </h3>
 <p>
-    Suppose you live in Turkey without a valid residence permit or a visa, and the deportation decision hasn’t been
-    taken against you as yet. In that case, you can apply for a humanitarian residence permit. Those waiting for
-    deportation and people unable to return to their home country due to emergency reasons can also apply for this
-    permit.
+    {% translate 'Suppose you live in Turkey without a valid residence permit or a visa, and the deportation decision has not been taken against you as yet. In that case, you can apply for a humanitarian residence permit. Those waiting for deportation and people unable to return to their home country due to emergency reasons can also apply for this permit.' %}
 </p>
 
 
 <h3>
-    Residence permit for victims of Human Trafficking:
+    {% translate 'Residence permit for victims of Human Trafficking:' %}
 </h3>
 <p>
-    If you have been a victim of human trafficking and are residing in Turkey, you can apply for this permit.
+    {% translate 'If you have been a victim of human trafficking and are residing in Turkey, you can apply for this permit.' %}
 </p>
 
 
 <h3>
-    How to Apply for a Residence Permit in Turkey?
+    {% translate 'How to Apply for a Residence Permit in Turkey?' %}
 </h3>
 <p>
-    If you want to apply for a Turkey residence permit, you need to follow several procedures. Firstly, please remember
-    that you can only apply for a residence permit within one month of your arrival in the country.
+    {% translate 'If you want to apply for a Turkey residence permit, you need to follow several procedures. Firstly, please remember that you can only apply for a residence permit within one month of your arrival in the country.' %}
 </p>
 <p>
-    The next and a crucial step is to determine which type of residence permit you will need. After you have decided,
-    please complete an online application form https://e-ikamet.goc.gov.tr/. You will have to provide personal and
-    professional details, such as full name, surname, parents’ names, date of birth, nationality, phone number, etc.
+    {% translate 'The next and a crucial step is to determine which type of residence permit you will need. After you have decided, please complete an online application form https://e-ikamet.goc.gov.tr/. You will have to provide personal and professional details, such as full name, surname, parents’ names, date of birth, nationality, phone number, etc.' %}
 </p>
 <p>
-    After submitting the form, you will have to visit the Central Appointment System website to book an appointment
-    with the nearest Directorate General of Migration Management office. This process will be similar to the
-    application process. All you have to do is complete another form and provide your residence details in Turkey. You
-    will receive the address of the nearest DGMM office as well as a list of necessary documents you need to provide,
-    the times and dates available for appointment, and the application and card fee, which you will have to pay to
-    initiate the process formally.
+    {% translate 'After submitting the form, you will have to visit the Central Appointment System website to book an appointment with the nearest Directorate General of Migration Management office. This process will be similar to the application process. All you have to do is complete another form and provide your residence details in Turkey. You will receive the address of the nearest DGMM office as well as a list of necessary documents you need to provide, the times and dates available for appointment, and the application and card fee, which you will have to pay to initiate the process formally.' %}
 </p>
 
 
 <h3>
-    Documents Required for a Turkey Residence Permit:
+    {% translate 'Documents Required for a Turkey Residence Permit:' %}
 </h3>
 <p>
-    You will submit some necessary documents when you arrive at the DGMM office on your appointment. The required
-    documents include:
+    {% translate 'You will submit some necessary documents when you arrive at the DGMM office on your appointment. The required documents include:' %}
 </p>
 <ul>
-    <li>The Residence permit application form</li>
-    <li>At least 4 biometric photographs</li>
-    <li>Your original passport</li>
-    <li>A notarized copy of your passport or any equivalent travel document</li>
-    <li>Proof of sustainable/sufficient financial resources to support your entire duration of the stay in Turkey. You
-        should have enough funds in your bank account to afford a minimum of €500 for each month you will spend in
-        Turkey. Or else, you can present proof that you’ll receive that amount monthly.</li>
+    <li>{% translate 'The Residence permit application form' %}</li>
+    <li>{% translate 'At least 4 biometric photographs' %}</li>
+    <li>{% translate 'Your original passport' %}</li>
+    <li>{% translate 'A notarized copy of your passport or any equivalent travel document' %}</li>
+    <li>{% translate 'Proof of sustainable/sufficient financial resources to support your entire duration of the stay in Turkey. You should have enough funds in your bank account to afford a minimum of €500 for each month you will spend in Turkey. Or else, you can present proof that you’ll receive that amount monthly.' %}</li>
 </ul>
 
 
 <h3>
-    Health Insurance:
+    {% translate 'Health Insurance:' %}
 </h3>
 <p>
-    Depending on your situation, the residence permit type you have applied for, and your country of origin, you will
-    have to provide additional support documents. Do make sure that you present them all on your appointment day.
+    {% translate 'Depending on your situation, the residence permit type you have applied for, and your country of origin, you will have to provide additional support documents. Do make sure that you present them all on your appointment day.' %}
 </p>
 
 
 <h3>
-    Residence Permit Validity:
+    {% translate 'Residence Permit Validity:' %}
 </h3>
 <p>
-    The validity of a Turkish residence Permit depends on permit type. Here is a breakdown of the validity duration of
-    all types of permits.
+    {% translate 'The validity of a Turkish residence Permit depends on permit type. Here is a breakdown of the validity duration of all types of permits.' %}
 </p>
 <ul>
-    <li>Short-term Residence Permit-It is valid for a maximum duration of two years at a time.</li>
-    <li>Long-term Residence Permit- Indefinite validity.</li>
-    <li>Student Residence Permit:Its validity depends on the length of the course/study program. If it is less than
-        one year, the permit validity will be one year. </li>
-    <li>Family Residence Permit:It can be issued for up to three years at a time.</li>
-    <li>Humanitarian Residence Permit:This permit is granted/extended for a max duration of one year.</li>
-    <li>Residence Permit for the victims of human trafficking:It is issued for a max duration of thirty days</li>
+    <li>{% translate 'Short-term Residence Permit-It is valid for a maximum duration of two years at a time.' %}</li>
+    <li>{% translate 'Long-term Residence Permit- Indefinite validity.' %}</li>
+    <li>{% translate 'Student Residence Permit:Its validity depends on the length of the course/study program. If it is less than one year, the permit validity will be one year.' %} </li>
+    <li>{% translate 'Family Residence Permit:It can be issued for up to three years at a time.' %}</li>
+    <li>{% translate 'Humanitarian Residence Permit:This permit is granted/extended for a max duration of one year.' %}</li>
+    <li>{% translate 'Residence Permit for the victims of human trafficking:It is issued for a max duration of thirty days' %}</li>
 </ul>
 
 {% endblock %}

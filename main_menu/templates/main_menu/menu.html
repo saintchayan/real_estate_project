@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load static i18n %}
 
-{% block title %}Menu{% endblock %}
+{% block title %} {% translate 'Menu' %} {% endblock %}
 
 {% block head_of_content %}
 {% endblock %}
@@ -13,13 +14,15 @@
      background-attachment: fixed;
      background-size: 100% 100%;">
     <div id="homeHeaderInnerCon">
-        <div id="homeHeaderTitle" class="customHeaderImageText">Find homes and apartments from trusted SibirMAX</div>
+        <div id="homeHeaderTitle" class="customHeaderImageText">
+            {% translate 'Find homes and apartments from trusted SibirMAX' %}</div>
     </div>
 </div>
 
 <div id="homeHeaderFooterCon" class="fullWidth">
-    <div><strong>Need help finding a realtor?</strong></div>
-    <a class="whiteRoundedBtn btn" href="{% url 'client_request' %}" id="whiteRoundedBtn">Get Started</a>
+    <div><strong>{% translate 'Need help finding a realtor?' %}</strong></div>
+    <a class="whiteRoundedBtn btn" href="{% url 'client_request' %}" id="whiteRoundedBtn">
+        {% translate 'Get Started' %}</a>
 </div>
 
 <div class="fullWidth">
@@ -37,40 +40,44 @@
         </div>
         <div class="carousel-inner">
             <h1 style="font-size:30px" class="NAC_WhyUseRealtorPageTitleH1">
-            Why use SibirMAX Real Estate Studio?
+            {% translate 'Why use SibirMAX Real Estate Studio?' %}
             </h1>
             <div class="carousel-item active">
                 <img src="/media/images/slide_photo_1.png" class="d-block w-100" alt="slide_photo_1">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 class="carouselTextCon"><strong>Expertise</strong></h2>
-                    <p class="carouselTextCon"><strong>By working with SibirMAX, you’ll be able to navigate complicated situations like a pro.
-                        SibirMAX have the expertise required to help strategize, negotiate and achieve the best
-                        outcomes possible. Plus, they’ll provide expert guidance throughout the entire home buying
-                        and selling journey.</</strong>p>
+                    <h2 class="carouselTextCon"><strong>{% translate 'Expertise' %}</strong></h2>
+                    <p class="carouselTextCon"><strong>
+                        {% translate 'By working with SibirMAX, you’ll be able to navigate complicated situations like a pro. SibirMAX have the expertise required to help strategize, negotiate and achieve the best outcomes possible. Plus, they’ll provide expert guidance throughout the entire home buying and selling journey.' %}</strong>
+                    </p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/media/images/slide_photo_2.png" class="d-block w-100" alt="slide_photo_2">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 class="carouselTextCon"><strong>Knowledge</strong></h2>
-                    <p class="carouselTextCon"><strong>With valuable real estate market knowledge, SibirMAX work to ensure you’re getting objective and
-                        accurate information when it comes to buying or selling your home.</strong></p>
+                    <h2 class="carouselTextCon"><strong>{% translate 'Knowledge' %}</strong></h2>
+                    <p class="carouselTextCon"><strong>
+                        {% translate 'With valuable real estate market knowledge, SibirMAX work to ensure you’re getting objective and accurate information when it comes to buying or selling your home.' %}
+                    </strong>
+                    </p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/media/images/slide_photo_3.png" class="d-block w-100" alt="slide_photo_3">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 class="carouselTextCon"><strong>Dedication</strong></h2>
-                    <p class="carouselTextCon"><strong>SibirMAX will be on your team and is committed to protecting your interests. As you navigate
-                        this complex process, they’ll be with you every step of the way.</strong></p>
+                    <h2 class="carouselTextCon"><strong>{% translate 'Dedication' %}</strong></h2>
+                    <p class="carouselTextCon"><strong>
+                        {% translate 'SibirMAX will be on your team and is committed to protecting your interests. As you navigate this complex process, they’ll be with you every step of the way.' %}
+                    </strong></p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>

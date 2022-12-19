@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load static i18n %}
 
-{% block title %}Contact Us{% endblock %}
+{% block title %}{% translate 'Contact Us' %}{% endblock %}
 
 {% block head_of_content %}
 <h1></h1>
@@ -12,14 +13,15 @@
     <form method="POST" class="CrSF_yOD51AMkSJy9hjf" action="{% url 'client_request' %}">
         {% csrf_token %}
         <div class="CrSF_yOD51AMkSJy9hjf">
-            <h1 class="od0DN2hUKsFnW55ZBTnF">Contact Us</h1>
+            <h1 class="od0DN2hUKsFnW55ZBTnF">{% translate 'Contact Us' %}</h1>
             <div class="dOm4Gl8t78fUG9SA6lvl">
                 {% for field in form %}
                     <div class="dsrm_formField dlgpBFfaR0zWvrNbWAIS {% if field.errors%} errors {% endif %}" >
                         <label class="dsrm_formLabel" for="id_{{ field.name }}">{{ field.label }}</label>
                         <div class="dsrm_formField__field">
                             <input class="dsrm_inputText dlgpBFfaR0zWvrNbWAIS undefined" type="text"
-                                   name="{{ field.name }}" id="id_{{ field.name }}" placeholder="{{ field.help_text }}">
+                                   name="{{ field.name }}" id="id_{{ field.name }}"
+                                   placeholder="{{ field.help_text }}">
                         </div>
                     </div>
                 {% endfor %}

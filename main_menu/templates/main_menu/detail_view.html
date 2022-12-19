@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static i18n %}
 
 {% block title %} {{ object.address }} {% endblock %}
 
@@ -24,7 +25,7 @@
                             <div id="listingPriceValue">
                                 ₺{{ object.price_in_lira }}
                                 {% if object.type == 'R' %}
-                                    per month
+                                    {% translate 'per month' %}
                                 {% endif %}
                             </div>
                             <div id="listingNextOpenHouseCon"></div>
@@ -35,11 +36,11 @@
             <div class="table">
                 <div class="listingTopDetailsLeft">
                     <div id="listingAddress" class="unsetH1">
-                        Province: {{ object.get_city_display }} <br>
-                        Address: {{ object.address }}
+                        {% translate 'Province:' %} {{ object.get_city_display }} <br>
+                        {% translate 'Address:' %} {{ object.address }}
                     </div>
                     <div id="listingMLSNum">
-                        District: {{object.get_district_display}}
+                        {% translate 'District:' %} {{object.get_district_display}}
                     </div>
                 </div>
                 <div class="listingTopDetailsRight">
@@ -51,7 +52,7 @@
                                     <img src="/media/images/bed_icon.png" alt="bed_icon">
                                 </div>
                             </div>
-                            <div class="listingIconText">Bedrooms</div>
+                            <div class="listingIconText">{% translate 'Bedrooms' %}</div>
                         </div>
                         <div id="FloorIcon" class="listingIconCon">
                             <div class="listingIconNum">{{ object.floor }}</div>
@@ -60,7 +61,7 @@
                                     <img src="/media/images/floor_icon.png" alt="floor_icon">
                                 </div>
                             </div>
-                            <div class="listingIconText">Floor</div>
+                            <div class="listingIconText">{% translate 'Floor' %}</div>
                         </div>
                         <div id="SquareIcon" class="listingIconCon">
                             <div class="listingIconNum">{{ object.square }}</div>
@@ -69,7 +70,7 @@
                                     <img src="/media/images/square_icon.png" alt="square_icon">
                                 </div>
                             </div>
-                            <div class="listingIconText">Square</div>
+                            <div class="listingIconText">{% translate 'Square' %}</div>
                         </div>
                     </div>
 
@@ -80,15 +81,16 @@
             <div id="listingDetailsTabsBody">
                 <div id="listingInfoTab" class="listingTabContent overwriteShowPrint">
                     <div class="propertyDetailsSectionCon" id="PropertyDescription" >
-                        <div class="propertyDetailsSectionHeader">Description</div>
+                        <div class="propertyDetailsSectionHeader">{% translate 'Description' %}</div>
                         <div id="propertyDescriptionCon">
                              {{ object.description }}
                         </div>
                     </div>
                     <div class="propertyDetailsSectionCon" id="PropertyData">
-                        <div class="propertyDetailsSectionHeader">Data</div>
+                        <div class="propertyDetailsSectionHeader">{% translate 'Data' %}</div>
                         <div class="propertyDetailsSectionContent">
-                            <div class="propertyDetailsSectionContentSubCon" id="propertyDetailsSectionContentSubCon_PropertyType">
+                            <div class="propertyDetailsSectionContentSubCon"
+                                 id="propertyDetailsSectionContentSubCon_PropertyType">
                                 <div class="propertyDetailsSectionContentValue">{{ object.created_data }}</div>
                             </div>
                         </div>
@@ -114,11 +116,13 @@
         {% endfor %}
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
