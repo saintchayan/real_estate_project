@@ -8,9 +8,9 @@ class PictureInline(admin.StackedInline):
 
 @admin.register(RentSale)
 class SiteAdmin(admin.ModelAdmin):
-    #     # list_display = ['city', 'type', 'district', 'address', 'owner', 'phone_number', 'price_in_lira']
-    #     # ordering = ['district']
-    #     # list_per_page = 10
+    # list_display = ['city', 'type', 'district', 'address', 'owner', 'phone_number', 'price_in_lira']
+    # ordering = ['district']
+    # list_per_page = 10
     inlines = [PictureInline]
     pass
 

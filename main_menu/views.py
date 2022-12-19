@@ -1,11 +1,9 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.views.generic.edit import FormView
 from rest_framework.viewsets import GenericViewSet
-
 from .forms import ClientRequestForm
-from .models import RentSale, ClientRequest
+from .models import RentSale
 from django.views.generic import ListView, DetailView
 from rest_framework import mixins
 from main_menu.serializer import RentSaleSerializer
