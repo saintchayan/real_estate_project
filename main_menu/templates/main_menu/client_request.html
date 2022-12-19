@@ -9,7 +9,7 @@
 {% block content %}
 
 <div class="ndnrNwU97ucGQrOfz8zQ" style="width: 50%; margin: 0 auto;">
-    <form class="CrSF_yOD51AMkSJy9hjf" action="/" method="post">
+    <form method="POST" class="CrSF_yOD51AMkSJy9hjf" action="{% url 'client_request' %}">
         {% csrf_token %}
         <div class="CrSF_yOD51AMkSJy9hjf">
             <h1 class="od0DN2hUKsFnW55ZBTnF">Contact Us</h1>
