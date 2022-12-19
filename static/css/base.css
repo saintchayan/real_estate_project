@@ -786,3 +786,15 @@ form {
     padding: 8px 16px;
     width: 100%;
 }
+
+.carousel-caption {
+    margin: 0;
+    position: right;
+    top: 75%;
+    transform: translateY(-50%);
+    background: rgba(72, 122, 180, .7);
+}
+
+
+
+

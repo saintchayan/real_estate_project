@@ -1,5 +1,6 @@
 from django.core.validators import MinLengthValidator
 from django.db import models
+from django.urls import reverse
 
 
 class RentSale(models.Model):
@@ -71,3 +72,7 @@ class ClientRequest(models.Model):
         return (f'Имя: {self.name}; '
                 f'Телефон: {self.phone}; '
                 f'Сообщение: {self.message}')
+
+    # @staticmethod
+    #  def get_absolute_url(self):
+    #     return reverse('')
