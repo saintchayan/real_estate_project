@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.views.generic.edit import FormView
 from rest_framework.viewsets import GenericViewSet
@@ -52,35 +53,28 @@ class ClientRequestView(FormView):
 
 
 def contacts(request):
-    response = render_to_string('main_menu/contacts.html')
-    return HttpResponse(response)
+    return render(request, 'main_menu/contacts.html')
 
 
 def about_us(request):
-    response = render_to_string('main_menu/about_us.html')
-    return HttpResponse(response)
+    return render(request, 'main_menu/about_us.html')
 
 
 def medical_insurance(request):
-    response = render_to_string('main_menu/medical_insurance.html')
-    return HttpResponse(response)
+    return render(request, 'main_menu/medical_insurance.html')
 
 
 def resident_card(request):
-    response = render_to_string('main_menu/resident_card.html')
-    return HttpResponse(response)
+    return render(request, 'main_menu/resident_card.html')
 
 
 def terms_of_use(request):
-    response = render_to_string('main_menu/terms_of_use.html')
-    return HttpResponse(response)
+    return render(request, 'main_menu/terms_of_use.html')
 
 
 def privacy_policy(request):
-    response = render_to_string('main_menu/privacy_policy.html')
-    return HttpResponse(response)
+    return render(request, 'main_menu/privacy_policy.html')
 
 
 def frequently_asked_questions(request):
-    response = render_to_string('main_menu/frequently_asked_questions.html')
-    return HttpResponse(response)
+    return render(request, 'main_menu/frequently_asked_questions.html')

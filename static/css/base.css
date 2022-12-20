@@ -795,6 +795,25 @@ form {
     background: rgba(72, 122, 180, .7);
 }
 
+.contact_column {
+  float: left;
+  padding: 30px;
+  height: 500px;
+  font-size: 1.5em;
+}
 
+.contact_column left {
+  width: 50%;
+}
+
+.contact_column right {
+  width: 50%;
+}
+
+.contact_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 

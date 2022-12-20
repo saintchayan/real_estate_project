@@ -9,21 +9,32 @@
 
 {% block content %}
 
-<h3>
-    {% translate 'Location' %} <br>
-    Muratpaşa, Meltem, Meltem Blv. No:5,<br>
-    07030 Muratpaşa/Antalya<br>
-    <br>{% translate 'Hours' %}<br>
-    {% translate 'Monday–Friday' %}<br>
-    9am–5pm<br>
-    <br>{% translate 'Phone' %}<br>
-    +7 (915)-165-77-71<br>
-</h3>
-
 <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.9205381311817!2d30.668982315586337!3d36.89224917021169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3902de888ba5f%3A0xc4daec2d5e99a8be!2sMeltem%2C%20Meltem%20Blv.%20No%3A5%2C%2007030%20Muratpa%C5%9Fa%2FAntalya!5e0!3m2!1sru!2str!4v1671468758333!5m2!1sru!2str"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>{% translate 'Location' %}</h2>
 </div>
+<div>
+    <div class="contact_row" style="box-sizing: border-box;">
+        <div class="contact_column left" >
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.9205381311817!2d30.668982315586337!3d36.89224917021169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3902de888ba5f%3A0xc4daec2d5e99a8be!2sMeltem%2C%20Meltem%20Blv.%20No%3A5%2C%2007030%20Muratpa%C5%9Fa%2FAntalya!5e0!3m2!1sru!2str!4v1671468758333!5m2!1sru!2str"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="contact_column right" >
+            <div><h3>{% translate 'Address' noop %}</h3></div>
+            <div>{% translate 'Muratpaşa, Meltem, Meltem Blv. No:5,' noop %}</div>
+            <div>{% translate '07030 Muratpaşa/Antalya' noop %}</div>
+            <div>{% translate 'Hours' %}</div>
+            <div>{% translate 'Monday–Friday' %}</div>
+            <div>{% translate '9am–5pm' noop %}</div>
+            <div>{% translate 'Phone' %}</div>
+            <div>{% translate '+7 (915)-165-77-71' noop %}</div>
+        </div>
+    </div>
+</div>
+
+
+
 
 {% endblock %}
