@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-21 03:45+0300\n"
+"POT-Creation-Date: 2022-12-21 07:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,39 +37,34 @@ msgstr "Контакты"
 msgid "Location"
 msgstr "Местоположение"
 
-#: main_menu/templates/main_menu/contacts.html:25
-#, fuzzy
+#: main_menu/templates/main_menu/contacts.html:26
 #| msgid "Address:"
 msgid "Address"
 msgstr "Адрес:"
 
-#: main_menu/templates/main_menu/contacts.html:26
-msgid "Muratpaşa, Meltem, Meltem Blv. No:5,"
-msgstr ""
-
-#: main_menu/templates/main_menu/contacts.html:27
-msgid "07030 Muratpaşa/Antalya"
-msgstr ""
-
-#: main_menu/templates/main_menu/contacts.html:28
-msgid "Hours"
-msgstr "Часы"
-
 #: main_menu/templates/main_menu/contacts.html:29
+msgid "Company schedule"
+msgstr "График работы компании"
+
+#: main_menu/templates/main_menu/contacts.html:30
 msgid "Monday–Friday"
 msgstr "Понедельник–пятница"
 
-#: main_menu/templates/main_menu/contacts.html:30
-msgid "9am–5pm"
-msgstr ""
-
 #: main_menu/templates/main_menu/contacts.html:31
+msgid "Hours"
+msgstr "Часы"
+
+#: main_menu/templates/main_menu/contacts.html:32
+msgid "9am–5pm"
+msgstr "с 9 утра – до 5 вечера"
+
+#: main_menu/templates/main_menu/contacts.html:33
 msgid "Phone"
 msgstr "Телефон"
 
-#: main_menu/templates/main_menu/contacts.html:32
-msgid "+7 (915)-165-77-71"
-msgstr ""
+#: main_menu/templates/main_menu/contacts.html:35
+msgid "Email"
+msgstr "Электронная почта"
 
 #: main_menu/templates/main_menu/detail_view.html:28
 #: main_menu/templates/main_menu/rent.html:46

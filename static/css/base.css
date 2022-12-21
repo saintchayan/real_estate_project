@@ -798,8 +798,8 @@ form {
 .contact_column {
   float: left;
   padding: 30px;
-  height: 500px;
-  font-size: 1.5em;
+  text-align: center;
+  font-size: 1em;
 }
 
 .contact_column left {
@@ -807,7 +807,7 @@ form {
 }
 
 .contact_column right {
-  width: 50%;
+    width: 50%;
 }
 
 .contact_row:after {
