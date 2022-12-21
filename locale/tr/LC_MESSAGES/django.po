@@ -38,7 +38,7 @@ msgstr "Konum"
 #: main_menu/templates/main_menu/contacts.html:26
 #| msgid "Address:"
 msgid "Address"
-msgstr "Adres:"
+msgstr "Adres"
 
 #: main_menu/templates/main_menu/contacts.html:29
 msgid "Company schedule"
@@ -169,15 +169,15 @@ msgstr "KİRA"
 
 #: templates/base.html:92
 msgid "RESIDENT PERMIT"
-msgstr "YERLEŞİK İZNİ"
+msgstr "İKAMET İZNİ"
 
 #: templates/base.html:95
 msgid "MEDICAL INSURANCE"
-msgstr "TIBBİ SİGORTA"
+msgstr "SAĞLIK SİGORTASI"
 
 #: templates/base.html:132
 msgid "Resident permit"
-msgstr "Yerleşik izni"
+msgstr "İkamet izni"
 
 #: templates/base.html:136
 msgid "Presidency of Migration Management"
@@ -201,4 +201,4 @@ msgstr "Kullanım Koşulları"
 
 #: templates/base.html:160
 msgid "STAY CONNECTED"
-msgstr "BAĞLI KAL"
+msgstr "HAKKıMıZDA"

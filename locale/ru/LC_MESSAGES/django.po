@@ -40,7 +40,7 @@ msgstr "Местоположение"
 #: main_menu/templates/main_menu/contacts.html:26
 #| msgid "Address:"
 msgid "Address"
-msgstr "Адрес:"
+msgstr "Адрес"
 
 #: main_menu/templates/main_menu/contacts.html:29
 msgid "Company schedule"
