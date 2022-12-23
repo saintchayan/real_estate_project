@@ -816,4 +816,108 @@ form {
   clear: both;
 }
 
+@media only screen and (max-width: 575.98px) {
 
+    #mainCon {
+        max-width: 360px;
+        min-width: 360px;
+        margin: auto;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-top: -56px;
+    }
+
+    #header, #headerMenu, #Pagination {
+      max-width: 360px;
+      min-width: 360px;
+      margin: 0 auto;
+    }
+
+    .toggleOption {
+        display: none;
+    }
+
+    .langChose {
+        width: 70px;
+    }
+
+    #BodyContenCon {
+        margin: 0 0 0 0;
+    }
+
+    #homeHeaderInnerCon {
+        height: 215px;
+    }
+
+    #homeHeaderTitle {
+        font-size: 1.5em;
+    }
+
+    .headerMenuItem {
+        padding: 0px 0px;
+        font-size: 0.7rem;
+    }
+
+    #homeHeaderFooterCon {
+        padding: 20px 35px;
+        font-size: 0.8em;
+    }
+
+    #whiteRoundedBtn {
+        transform: translateY(-1%);
+    }
+
+    .carousel-inner h1 {
+        font-size: 20px !important;
+    }
+
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    #footerLinkCon {
+        flex-direction: column;
+        padding: 5px 75px 0px 75px;
+    }
+
+    .footerLabel p {
+        font-size: 0.7em;
+    }
+
+    #footerSocialAppCon {
+        background: #3B3842;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 55px;
+    }
+
+    #footerSocialAppCon .footerContent {
+        vertical-align: top;
+    }
+
+    .ndnrNwU97ucGQrOfz8zQ {
+        width: 100% !important;
+    }
+}
+
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 1399.98px) {
+
+}

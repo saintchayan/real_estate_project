@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title> {% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="icon" href="/media/images/icon2.png" type="image/png">
@@ -52,9 +53,6 @@
                                     <a href="" class="toggleOption " data-value="2">
                                         <img src="/media/images/tur-icon.png" alt="tur-icon">
                                     </a>
-                                    <a href="" class="toggleOption " data-value="4">
-                                        <img src="/media/images/arab-icon.svg" alt="arab-icon">
-                                    </a>
                                     <a href="" class="toggleOption " data-value="3">
                                         <img src="/media/images/rus-icon.png" alt="rus-icon">
                                     </a>
@@ -62,8 +60,9 @@
                             </div>
                         </span>
                     </div>
-                    <div>
-                        <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                    <div >
+                        <form action="{% url 'set_language' %}" method="post" class="langChose">
+                            {% csrf_token %}
                             <input name="next" type="hidden" value="{{ redirect_to }}">
                             <select name="language">
                                 {% get_current_language as LANGUAGE_CODE %}
@@ -96,6 +95,9 @@
                 <div class="headerMenuItem ">
                     <a href="{% url 'medical_insurance'%}">{% translate 'MEDICAL INSURANCE' %}</a>
                 </div>
+                <div class="headerMenuItem ">
+                    <a href="{% url 'citizenship'%}">{% translate 'CITIZENSHIP' %}</a>
+                </div>
             </div>
         </span>
 
@@ -120,7 +122,7 @@
             </span>
         </div>
 
-        <span id="ctl36" class="ControlBaseWrapper">
+        <div id="ctl36" class="ControlBaseWrapper">
             <footer id="footer">
                 <div id="footerLinkCon" class="noPrint">
                     <div class="footerCol">
@@ -159,7 +161,7 @@
                         <div class="footerLabel"></div>
                     </div>
                     <div class="footerSocialAppConRight">
-                        <div class="footerLabel">{% translate 'STAY CONNECTED' %}</div>
+                        <div class="footerLabel" id="contactLabel"><p>{% translate 'STAY CONNECTED' %}</p></div>
                         <div class="footerContent">
 <!--                            <a href="https://www.instagram.com/mergen_siberia/" rel="noopener noreferrer"-->
 <!--                               target="_blank">-->
@@ -167,16 +169,18 @@
 <!--                                     alt="inst-icon">-->
 <!--                            </a>-->
                             <a href="https://t.me/+905322962577" rel="noopener noreferrer" target="_blank">
-                                <img src="/media/images/tg-icon.png" style="height: 25px; width: 25px;" alt="tg-icon">
+                                <img src="/media/images/tg-icon.png" class="footerContentImg"
+                                     style="height: 25px; width: 25px;" alt="tg-icon">
                             </a>
                             <a href="https://wa.me/905322962577" rel="noopener noreferrer" target="_blank">
-                                <img src="/media/images/wa-icon.png" style="height: 25px; width: 25px;" alt="wa-icon">
+                                <img src="/media/images/wa-icon.png" class="footerContentImg"
+                                     style="height: 25px; width: 25px;" alt="wa-icon">
                             </a>
                         </div>
                     </div>
                 </div>
             </footer>
-        </span>
+        </div>
     </div>
 </div>
 </body>

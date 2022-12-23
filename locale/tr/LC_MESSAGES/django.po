@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-21 07:54+0300\n"
+"POT-Creation-Date: 2023-01-01 21:40+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: main_menu/templates/main_menu/about_us.html:4 templates/base.html:152
+#: main_menu/templates/main_menu/about_us.html:4 templates/base.html:156
 msgid "About us"
 msgstr "Hakkımızda"
+
+#: main_menu/templates/main_menu/about_us.html:15
+msgid ""
+"Our story started like many good things in life, a spur-of-the-moment kind "
+"of idea followed by then proper planning, hard work and commitment that can "
+"turn a good thing into something great."
+msgstr ""
+
+#: main_menu/templates/main_menu/citizenship.html:4
+msgid "Citizenship"
+msgstr "Vatandaşlık"
 
 #: main_menu/templates/main_menu/client_request.html:4
 #: main_menu/templates/main_menu/client_request.html:16
 msgid "Contact Us"
 msgstr "Bize Ulaşın"
 
-#: main_menu/templates/main_menu/contacts.html:4 templates/base.html:150
+#: main_menu/templates/main_menu/contacts.html:4 templates/base.html:154
 msgid "Contacts"
 msgstr "Kişiler"
 
@@ -36,7 +47,6 @@ msgid "Location"
 msgstr "Konum"
 
 #: main_menu/templates/main_menu/contacts.html:26
-#| msgid "Address:"
 msgid "Address"
 msgstr "Adres"
 
@@ -106,7 +116,7 @@ msgid "FAQ"
 msgstr "Sikça sorulan sorular"
 
 #: main_menu/templates/main_menu/medical_insurance.html:4
-#: templates/base.html:130
+#: templates/base.html:134
 msgid "Medical insurance"
 msgstr "Sağlık sigortası"
 
@@ -115,26 +125,30 @@ msgid "Menu"
 msgstr "Menü"
 
 #: main_menu/templates/main_menu/menu.html:18
-msgid "Find homes and apartments from trusted SibirMAX"
-msgstr "Güvenilir SibirMAX'tan evler ve daireler bulun"
+#, fuzzy
+#| msgid "Find homes and apartments from trusted SibirMax"
+msgid "Find homes and apartments from trusted SibirMax"
+msgstr "Güvenilir SibirMax'tan evler ve daireler bulun"
 
 #: main_menu/templates/main_menu/menu.html:23
 msgid "Need help finding a realtor?"
-msgstr "Bir emlakçı bulmak için yardıma mı ihtiyacınız var?"
+msgstr "Bir emlak bulmak için yardıma mı ihtiyacınız var?"
 
 #: main_menu/templates/main_menu/menu.html:25
 msgid "Get Started"
-msgstr "Başlayın"
+msgstr "Başla"
 
 #: main_menu/templates/main_menu/menu.html:43
-msgid "Why use SibirMAX Real Estate Studio?"
-msgstr "Neden SibirMAX Real Estate Studio kullanmalısınız?"
+#, fuzzy
+#| msgid "Why use SibirMax Real Estate Agency?"
+msgid "Why use SibirMax Real Estate Agency?"
+msgstr "Neden emlak ofisi SibirMax?"
 
-#: main_menu/templates/main_menu/privacy_policy.html:4 templates/base.html:146
+#: main_menu/templates/main_menu/privacy_policy.html:4 templates/base.html:150
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
-#: main_menu/templates/main_menu/rent.html:4 templates/base.html:128
+#: main_menu/templates/main_menu/rent.html:4 templates/base.html:132
 msgid "Rent"
 msgstr "Kira"
 
@@ -147,7 +161,7 @@ msgstr "ANTALYA"
 msgid "Resident card"
 msgstr "Yerleşik kartı"
 
-#: main_menu/templates/main_menu/sale.html:4 templates/base.html:126
+#: main_menu/templates/main_menu/sale.html:4 templates/base.html:130
 msgid "Sale"
 msgstr "Satış"
 
@@ -155,50 +169,54 @@ msgstr "Satış"
 msgid "Terms of Use Agreement"
 msgstr "Kullanım Koşulları Sözleşmesi"
 
-#: templates/base.html:76
+#: templates/base.html:77
 msgid "Go"
 msgstr "Git"
 
-#: templates/base.html:86
+#: templates/base.html:87
 msgid "SALE"
 msgstr "SATIŞ"
 
-#: templates/base.html:89
+#: templates/base.html:90
 msgid "RENT"
 msgstr "KİRA"
 
-#: templates/base.html:92
+#: templates/base.html:93
 msgid "RESIDENT PERMIT"
 msgstr "İKAMET İZNİ"
 
-#: templates/base.html:95
+#: templates/base.html:96
 msgid "MEDICAL INSURANCE"
 msgstr "SAĞLIK SİGORTASI"
 
-#: templates/base.html:132
+#: templates/base.html:99
+msgid "CITIZENSHIP"
+msgstr ""
+
+#: templates/base.html:136
 msgid "Resident permit"
 msgstr "İkamet izni"
 
-#: templates/base.html:136
+#: templates/base.html:140
 msgid "Presidency of Migration Management"
 msgstr "Göç İdaresi Başkanlığı"
 
-#: templates/base.html:138
+#: templates/base.html:142
 msgid "Antalya Metropolitan Municipality"
 msgstr "Antalya Büyükşehir Belediyesi"
 
-#: templates/base.html:140
+#: templates/base.html:144
 msgid "T.C. Antalya Prefecture"
 msgstr "T.C. Antalya Valiliği"
 
-#: templates/base.html:142
+#: templates/base.html:146
 msgid "Frequently Asked Questions"
 msgstr "Sıkça Sorulan Sorular"
 
-#: templates/base.html:148
+#: templates/base.html:152
 msgid "Terms of Use"
 msgstr "Kullanım Koşulları"
 
-#: templates/base.html:160
+#: templates/base.html:164
 msgid "STAY CONNECTED"
 msgstr "HAKKıMıZDA"

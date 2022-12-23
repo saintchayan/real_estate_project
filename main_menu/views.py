@@ -78,3 +78,7 @@ def privacy_policy(request):
 
 def frequently_asked_questions(request):
     return render(request, 'main_menu/frequently_asked_questions.html')
+
+
+def citizenship(request):
+    return render(request, 'main_menu/citizenship.html')
