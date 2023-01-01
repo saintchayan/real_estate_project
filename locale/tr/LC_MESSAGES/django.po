@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 22:02+0300\n"
+"POT-Creation-Date: 2023-01-05 23:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,13 +21,6 @@ msgstr ""
 #: main_menu/templates/main_menu/about_us.html:4 templates/base.html:156
 msgid "About us"
 msgstr "Hakkımızda"
-
-#: main_menu/templates/main_menu/about_us.html:15
-msgid ""
-"Our story started like many good things in life, a spur-of-the-moment kind "
-"of idea followed by then proper planning, hard work and commitment that can "
-"turn a good thing into something great."
-msgstr ""
 
 #: main_menu/templates/main_menu/citizenship.html:4 templates/base.html:144
 msgid "Citizenship"
