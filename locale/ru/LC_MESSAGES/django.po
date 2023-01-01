@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 21:40+0300\n"
+"POT-Creation-Date: 2023-01-01 22:02+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid ""
 "turn a good thing into something great."
 msgstr ""
 
-#: main_menu/templates/main_menu/citizenship.html:4
+#: main_menu/templates/main_menu/citizenship.html:4 templates/base.html:144
 msgid "Citizenship"
 msgstr "Гражданство"
 
@@ -139,8 +139,6 @@ msgid "Get Started"
 msgstr "Начать"
 
 #: main_menu/templates/main_menu/menu.html:43
-#, fuzzy
-#| msgid "Why use SibirMax Real Estate Agency?"
 msgid "Why use SibirMax Real Estate Agency?"
 msgstr "Почему стоит обратиться в  агентство недвижимости SibirMax?"
 
@@ -204,10 +202,6 @@ msgstr "Президиум по управлению миграционными 
 #: templates/base.html:142
 msgid "Antalya Metropolitan Municipality"
 msgstr "Муниципалитет Анталии"
-
-#: templates/base.html:144
-msgid "T.C. Antalya Prefecture"
-msgstr "Префектура Антальи"
 
 #: templates/base.html:146
 msgid "Frequently Asked Questions"
